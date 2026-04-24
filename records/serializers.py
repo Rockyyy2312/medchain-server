@@ -1,11 +1,15 @@
 from rest_framework import serializers
+from django.utils import timezone
 from .models import Record
 
 class RecordUploadSerializer(serializers.ModelSerializer):
+    record_date = serializers.DateField(required=False, default=timezone.localdate)
+
     class Meta:
         model = Record
         fields = ('id', 'record_type', 'record_date', 'doctor_name', 'file_url')
         read_only_fields = ('id',)
+
 
 class RecordTimelineSerializer(serializers.ModelSerializer):
     blockchain_status = serializers.SerializerMethodField()
