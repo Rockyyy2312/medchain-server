@@ -112,9 +112,32 @@ class AccessRequestViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         user = self.request.user
-        if user.role == 'doctor':
+        if user.role == 'DOCTOR':
             return AccessRequest.objects.filter(doctor=user).order_by('-created_at')
         return AccessRequest.objects.filter(patient=user).order_by('-created_at')
+
+    def create(self, request, *args, **kwargs):
+        patient_email = request.data.get('patient_email')
+        if not patient_email:
+            return Response({"error": "patient_email is required"}, status=status.HTTP_400_BAD_REQUEST)
+        
+        from django.contrib.auth import get_user_model
+        User = get_user_model()
+        try:
+            patient = User.objects.get(email=patient_email, role='PATIENT')
+        except User.DoesNotExist:
+            return Response({"error": "Patient with this email not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        if AccessRequest.objects.filter(doctor=request.user, patient=patient, status='Pending').exists():
+            return Response({"error": "A pending request already exists for this patient."}, status=status.HTTP_400_BAD_REQUEST)
+
+        access_request = AccessRequest.objects.create(
+            doctor=request.user,
+            patient=patient,
+            reason=request.data.get('reason', '')
+        )
+        serializer = self.get_serializer(access_request)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     @action(detail=True, methods=['post'])
     def approve(self, request, pk=None):
@@ -144,6 +167,18 @@ class AccessGrantViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         user = self.request.user
-        if user.role == 'doctor':
+        if user.role == 'DOCTOR':
             return AccessGrant.objects.filter(doctor=user).order_by('-created_at')
         return AccessGrant.objects.filter(patient=user).order_by('-created_at')
+
+class GrantedPatientRecordsView(APIView):
+    permission_classes = [IsAuthenticated]
+    
+    def get(self, request, patient_id):
+        if not AccessGrant.objects.filter(doctor=request.user, patient_id=patient_id).exists():
+            return Response({"error": "Access denied. Patient has not granted you access."}, status=status.HTTP_403_FORBIDDEN)
+            
+        records = Record.objects.filter(user_id=patient_id).select_related('blockchain_tx').order_by('-record_date', '-created_at')
+        from records.serializers import RecordTimelineSerializer
+        serializer = RecordTimelineSerializer(records, many=True, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
