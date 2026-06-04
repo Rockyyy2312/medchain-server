@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenRefreshView
-from .views import RegisterView, UserMeView, DoctorAnalyticsView, DoctorListView
+from .views import RegisterView, UserMeView, DoctorAnalyticsView, DoctorListView, GoogleAuthView
 from .jwt import CustomTokenObtainPairView
 
 urlpatterns = [
@@ -10,5 +10,6 @@ urlpatterns = [
     path('me/', UserMeView.as_view(), name='user_me'),
     path('analytics/', DoctorAnalyticsView.as_view(), name='doctor_analytics'),
     path('doctors/', DoctorListView.as_view(), name='doctor_list'),
+    path('google/', GoogleAuthView.as_view(), name='google_auth'),
 ]
 
