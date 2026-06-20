@@ -4,7 +4,7 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
-from api.schemas import QueryRequest, QueryResponse, ReindexResponse, HealthResponse, SourceChunk, QuestionBankResponse
+from api.schemas import QueryRequest, QueryResponse, ReindexResponse, HealthResponse, SourceChunk, QuestionBankResponse, CompareRequest, CompareResponse
 from auth.jwt_validator import validate_token
 from retrieval.retriever import retrieve, build_context
 from llm.generator import generate_answer, classify_query_mode, generate_patient_answer
@@ -216,4 +216,58 @@ async def get_questions(user: dict = Depends(get_current_user)):
             ]
         })
     return QuestionBankResponse(categories=categories_list)
+
+
+# ── /compare ───────────────────────────────────────────────────────────────────
+
+@router.post("/compare", response_model=CompareResponse, tags=["RAG"])
+async def compare_patients(
+    body: CompareRequest,
+    user: dict = Depends(get_current_user),
+):
+    """
+    Compare two patients based on their intelligence data.
+    Retrieves summaries for both patients from the index and generates
+    a structured comparative analysis via the LLM.
+    """
+    logger.info(f"Compare request: {body.patient_id_1} vs {body.patient_id_2} by {user.get('email')}")
+
+    aspects_text = ""
+    if body.aspects:
+        aspects_text = f" Focus on these aspects: {', '.join(body.aspects)}."
+
+    # Retrieve context for both patients
+    try:
+        chunks_1 = retrieve(f"summary insights risk factors medications", patient_id=body.patient_id_1, top_k=10)
+        chunks_2 = retrieve(f"summary insights risk factors medications", patient_id=body.patient_id_2, top_k=10)
+    except FileNotFoundError:
+        raise HTTPException(status_code=503, detail="FAISS index not built. Call POST /reindex first.")
+
+    context_1 = build_context(chunks_1)
+    context_2 = build_context(chunks_2)
+
+    compare_query = (
+        f"Compare the following two patients comprehensively.{aspects_text}\n\n"
+        f"=== PATIENT 1 ({body.patient_id_1}) ===\n{context_1}\n\n"
+        f"=== PATIENT 2 ({body.patient_id_2}) ===\n{context_2}\n\n"
+        f"Provide a structured comparison covering: demographics, lifestyle, chronic conditions, "
+        f"risk factors, medications, report findings, prognosis, and overall health status."
+    )
+
+    try:
+        comparison = await generate_patient_answer("", compare_query, "record_grounded")
+    except Exception as e:
+        logger.error(f"Compare LLM error: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to generate comparison: {str(e)}")
+
+    # Generate brief individual summaries
+    summary_1 = f"Patient {body.patient_id_1}: {len(chunks_1)} context chunks retrieved."
+    summary_2 = f"Patient {body.patient_id_2}: {len(chunks_2)} context chunks retrieved."
+
+    return CompareResponse(
+        comparison=comparison,
+        patient_1_summary=summary_1,
+        patient_2_summary=summary_2,
+        query=f"Compare {body.patient_id_1} vs {body.patient_id_2}",
+    )
 

@@ -10,6 +10,7 @@ from db.connector import (
     fetch_all_access_grants,
     fetch_all_access_requests,
 )
+from ingestion.patient_loader import load_patient_files
 
 
 def _normalize_id(val: Any) -> str:
@@ -320,6 +321,10 @@ def build_all_documents() -> List[Dict[str, Any]]:
             "source_type": "access_request",
             "source_id":   _normalize_id(req.get("id", "")),
         })
+
+    # Patient intelligence JSON files
+    intel_docs = load_patient_files()
+    docs.extend(intel_docs)
 
     return docs
 

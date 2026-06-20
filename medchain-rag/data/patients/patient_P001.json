@@ -1,0 +1,1021 @@
+{
+  "patient_id": "P001",
+  "metadata": {
+    "created_at": "2026-06-20T00:00:00Z",
+    "last_updated": "2026-06-20T00:00:00Z",
+    "version": "1.0",
+    "schema": "medchain_intelligence_v1",
+    "data_source": "clinical_records_integration"
+  },
+  "demographics": {
+    "full_name": "Arjun Deshmukh",
+    "age": 36,
+    "date_of_birth": "1990-02-14",
+    "gender": "Male",
+    "blood_group": "O+",
+    "marital_status": "Married",
+    "occupation": "Software Engineer",
+    "contact": {
+      "phone": "+91-98765-43210",
+      "email": "arjun.deshmukh@email.com",
+      "emergency_contact": {
+        "name": "Priya Deshmukh",
+        "relation": "Wife",
+        "phone": "+91-98765-43211"
+      }
+    },
+    "address": {
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India"
+    }
+  },
+  "lifestyle": {
+    "smoking": {
+      "status": "Never",
+      "details": "Has never smoked in his life. No exposure to secondhand smoke."
+    },
+    "alcohol": {
+      "status": "Never",
+      "details": "Consistently abstains from alcohol consumption. No history of social or occasional drinking."
+    },
+    "diet": {
+      "type": "Balanced / Low Glycemic Index",
+      "details": "Home-cooked meals with moderate carbohydrates, high protein intake, and low consumption of processed foods. Post-diabetes diagnosis, shifted to strict low glycemic index foods with portion management. Daily intake includes whole grains, lean proteins, green vegetables, and limited fruit sugars.",
+      "daily_calorie_estimate": "1800-2200 kcal",
+      "restrictions": ["Refined sugars", "White rice", "Processed foods", "High GI carbohydrates"]
+    },
+    "exercise": {
+      "status": "Active",
+      "frequency": "4-5 times per week",
+      "type": ["Jogging (30 minutes)", "Strength training (45 minutes)", "Cardiovascular exercises"],
+      "details": "Maintains a highly structured exercise routine since age 19. Increased cardiovascular exercise after prediabetes diagnosis at age 25."
+    },
+    "sleep": {
+      "average_hours": 7,
+      "quality": "Generally good, occasional disruptions during stress periods",
+      "issues": "Mild insomnia during high-stress work periods reported at ages 31-34"
+    },
+    "stress_level": "Moderate",
+    "stress_details": "Work-related stress in IT profession. Manages through exercise and structured routine."
+  },
+  "allergies": [
+    {
+      "allergen": "Sulfonamide antibiotics",
+      "reaction": "Mild skin rash",
+      "severity": "Mild",
+      "diagnosed_date": "2012-08-20",
+      "status": "Active"
+    },
+    {
+      "allergen": "Dust mites",
+      "reaction": "Sneezing, nasal congestion",
+      "severity": "Mild",
+      "diagnosed_date": "2010-03-15",
+      "status": "Active"
+    }
+  ],
+  "family_history": [
+    {
+      "relation": "Father",
+      "condition": "Type 2 Diabetes Mellitus",
+      "age_at_diagnosis": 45,
+      "current_status": "Managing with medication (Metformin + Glimepiride)",
+      "notes": "Diagnosed at age 45, currently 62 years old. On insulin since age 58."
+    },
+    {
+      "relation": "Mother",
+      "condition": "Type 2 Diabetes Mellitus",
+      "age_at_diagnosis": 48,
+      "current_status": "Managing with medication (Metformin)",
+      "notes": "Diagnosed at age 48, currently 59 years old. Good glycemic control."
+    },
+    {
+      "relation": "Paternal Grandfather",
+      "condition": "Type 2 Diabetes Mellitus, Coronary Artery Disease",
+      "age_at_diagnosis": 50,
+      "current_status": "Deceased (age 74, cardiac arrest)",
+      "notes": "Had diabetes-related complications including diabetic nephropathy."
+    },
+    {
+      "relation": "Maternal Uncle",
+      "condition": "Type 2 Diabetes Mellitus",
+      "age_at_diagnosis": 42,
+      "current_status": "Managing with medication",
+      "notes": "Developed diabetic retinopathy at age 55."
+    }
+  ],
+  "chronic_conditions": [
+    {
+      "condition": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "diagnosed_date": "2020-06-15",
+      "diagnosed_age": 30,
+      "status": "Active - Well Controlled",
+      "severity": "Moderate",
+      "managing_doctor": "Dr. Rajesh Kulkarni",
+      "specialty": "Endocrinology",
+      "notes": "Diagnosed based on HbA1c of 6.5%. Strong genetic predisposition with both parents diabetic. Currently managed with Metformin and lifestyle modifications."
+    },
+    {
+      "condition": "Prediabetes (historical)",
+      "icd_code": "R73.03",
+      "diagnosed_date": "2015-03-15",
+      "diagnosed_age": 25,
+      "status": "Progressed to Type 2 Diabetes",
+      "severity": "Mild",
+      "managing_doctor": "Dr. Rajesh Kulkarni",
+      "specialty": "Endocrinology",
+      "notes": "Fasting glucose 110 mg/dL detected during routine screening. Managed with lifestyle modifications for 5 years before progression."
+    },
+    {
+      "condition": "Mild Hyperlipidemia",
+      "icd_code": "E78.5",
+      "diagnosed_date": "2025-04-10",
+      "diagnosed_age": 35,
+      "status": "Active - Under Treatment",
+      "severity": "Mild",
+      "managing_doctor": "Dr. Sunita Nair",
+      "specialty": "Internal Medicine",
+      "notes": "Slightly elevated total cholesterol (218 mg/dL) and LDL (142 mg/dL). Started on low-dose Atorvastatin as preventive measure."
+    }
+  ],
+  "medical_history_timeline": [
+    {
+      "year": 2009,
+      "age": 19,
+      "events": [
+        {
+          "event": "Baseline health screening",
+          "details": "All parameters within normal limits. Fasting glucose 88 mg/dL. Began structured exercise routine.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "age": 20,
+      "events": [
+        {
+          "event": "Seasonal flu episode",
+          "details": "Mild influenza with fever (101°F), body aches. Resolved with standard OTC treatment in 5 days.",
+          "category": "Acute Illness"
+        },
+        {
+          "event": "Dust mite allergy diagnosed",
+          "details": "Recurrent sneezing and nasal congestion. Skin prick test confirmed dust mite allergy.",
+          "category": "Allergy"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "age": 21,
+      "events": [
+        {
+          "event": "Annual health checkup",
+          "details": "All values normal. Fasting glucose 90 mg/dL. HbA1c 5.2%. BMI 23.1.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "age": 22,
+      "events": [
+        {
+          "event": "Sulfonamide allergy discovered",
+          "details": "Prescribed Bactrim for urinary tract infection. Developed mild skin rash within 48 hours. Switched to Ciprofloxacin.",
+          "category": "Allergy"
+        },
+        {
+          "event": "Minor sports injury",
+          "details": "Mild ankle sprain during jogging. Treated with RICE protocol. Full recovery in 2 weeks.",
+          "category": "Injury"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "age": 23,
+      "events": [
+        {
+          "event": "Routine blood work",
+          "details": "Fasting glucose 94 mg/dL. HbA1c 5.3%. Lipid panel normal. All within normal limits.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "age": 24,
+      "events": [
+        {
+          "event": "Viral gastroenteritis",
+          "details": "3-day episode of vomiting and diarrhea. Managed with oral rehydration and bland diet. Complete recovery.",
+          "category": "Acute Illness"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "age": 25,
+      "events": [
+        {
+          "event": "Prediabetes detected",
+          "details": "Routine screening showed fasting glucose 110 mg/dL. HbA1c 5.7%. Categorized as prediabetes given family history. Physician advised closer monitoring.",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Dietary modifications initiated",
+          "details": "Shifted to low glycemic index diet. Reduced refined carbohydrates. Increased fiber intake.",
+          "category": "Lifestyle Change"
+        },
+        {
+          "event": "Exercise routine intensified",
+          "details": "Increased cardiovascular exercise from 3 to 5 times per week. Added 30-minute daily walks.",
+          "category": "Lifestyle Change"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "age": 26,
+      "events": [
+        {
+          "event": "Follow-up glucose monitoring",
+          "details": "Fasting glucose 106 mg/dL (slight improvement). HbA1c 5.8%. Lifestyle modifications showing partial benefit.",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "age": 27,
+      "events": [
+        {
+          "event": "Annual comprehensive panel",
+          "details": "Fasting glucose 108 mg/dL. HbA1c 5.9%. Slight upward trend despite good compliance. Lipid panel still normal.",
+          "category": "Monitoring"
+        },
+        {
+          "event": "Dental procedure",
+          "details": "Wisdom tooth extraction under local anesthesia. Uneventful recovery.",
+          "category": "Procedure"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "age": 28,
+      "events": [
+        {
+          "event": "Glucose tolerance test",
+          "details": "OGTT performed. 2-hour glucose 162 mg/dL (borderline). Fasting glucose 112 mg/dL. HbA1c 6.0%. Physician noted genetic progression despite lifestyle control.",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "age": 29,
+      "events": [
+        {
+          "event": "Semi-annual blood work",
+          "details": "Fasting glucose 118 mg/dL. HbA1c 6.2%. Progressive increase noted. Physician discussed potential future medication.",
+          "category": "Monitoring"
+        },
+        {
+          "event": "Eye examination",
+          "details": "Comprehensive dilated eye exam. No diabetic retinopathy signs. Visual acuity 20/20 bilaterally.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "age": 30,
+      "events": [
+        {
+          "event": "Type 2 Diabetes Mellitus diagnosed",
+          "details": "HbA1c reached 6.5%. Fasting glucose 126 mg/dL on two separate occasions. Formal diagnosis of Type 2 Diabetes Mellitus made. Started on Metformin 500 mg twice daily.",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Diabetes education program",
+          "details": "Enrolled in structured diabetes self-management education. Learned home glucose monitoring, carbohydrate counting, and hypoglycemia management.",
+          "category": "Education"
+        },
+        {
+          "event": "Home glucometer initiated",
+          "details": "Started regular self-monitoring of blood glucose (SMBG) with fasting and post-meal readings.",
+          "category": "Self-Care"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "age": 31,
+      "events": [
+        {
+          "event": "3-month follow-up",
+          "details": "HbA1c 6.6%. Good response to Metformin. No significant side effects. Fasting glucose averaging 115-120 mg/dL.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Mild fatigue episodes",
+          "details": "Reported intermittent fatigue, especially during work stress periods. Blood work ruled out thyroid dysfunction and anemia.",
+          "category": "Symptom"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "age": 32,
+      "events": [
+        {
+          "event": "Annual comprehensive review",
+          "details": "HbA1c 6.7%. Stable glycemic control. Kidney function (eGFR 95 mL/min, urine albumin-creatinine ratio normal). No complications detected.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Mild peripheral neuropathy symptoms",
+          "details": "Occasional tingling in fingertips during stress periods. Nerve conduction study normal. Attributed to stress-related paresthesia rather than diabetic neuropathy.",
+          "category": "Symptom"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "age": 33,
+      "events": [
+        {
+          "event": "6-month follow-up",
+          "details": "HbA1c 6.8%. Slight increase noted. Physician recommended stricter post-meal glucose monitoring.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "COVID-19 infection",
+          "details": "Mild COVID-19 infection. Home isolation for 10 days. No respiratory complications. Blood glucose temporarily elevated during illness (fasting 140-150 mg/dL). Returned to baseline after recovery.",
+          "category": "Acute Illness"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "age": 34,
+      "events": [
+        {
+          "event": "Annual review with endocrinologist",
+          "details": "HbA1c 6.9%. Metformin dose maintained. Discussed potential addition of SGLT2 inhibitor if HbA1c exceeds 7.0%. Kidney and eye screening normal.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Seasonal flu vaccination",
+          "details": "Annual influenza vaccine administered. No adverse reactions.",
+          "category": "Preventive Care"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "age": 35,
+      "events": [
+        {
+          "event": "Comprehensive cardiovascular evaluation",
+          "details": "Full cardiac workup including ECG, lipid panel, and stress assessment. ECG normal sinus rhythm. However, lipid panel showed elevated total cholesterol (218 mg/dL) and LDL (142 mg/dL).",
+          "category": "Evaluation"
+        },
+        {
+          "event": "Statin therapy initiated",
+          "details": "Started Atorvastatin 10 mg daily as preventive measure for cardiovascular risk given diabetes and mildly elevated cholesterol.",
+          "category": "Treatment"
+        },
+        {
+          "event": "Diabetic retinopathy screening",
+          "details": "Annual fundoscopy. No signs of diabetic retinopathy. Visual acuity maintained at 20/20.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "age": 36,
+      "events": [
+        {
+          "event": "Current status assessment",
+          "details": "HbA1c stable at 6.8%. Good glycemic control maintained. Cholesterol improving on Atorvastatin (total cholesterol 195 mg/dL). Blood pressure 118/76 mmHg. No diabetes-related complications.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Renal function monitoring",
+          "details": "eGFR 92 mL/min. Urine albumin-creatinine ratio 18 mg/g (normal <30). No evidence of diabetic nephropathy.",
+          "category": "Monitoring"
+        }
+      ]
+    }
+  ],
+  "medical_reports": [
+    {
+      "report_id": "RPT-P001-001",
+      "date": "2015-03-15",
+      "type": "Blood Test - Fasting Glucose & HbA1c",
+      "category": "Blood Test",
+      "facility": "City Health Diagnostics, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "fasting_glucose": { "value": 110, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Elevated" },
+        "hba1c": { "value": 5.7, "unit": "%", "reference_range": "<5.7%", "status": "Borderline (Prediabetes)" },
+        "fasting_insulin": { "value": 14.2, "unit": "µIU/mL", "reference_range": "2.6-24.9 µIU/mL", "status": "Normal" }
+      },
+      "doctor_notes": "Fasting glucose mildly elevated at 110 mg/dL. HbA1c at 5.7% indicates prediabetic range. Given strong family history (both parents Type 2 DM), recommend closer monitoring every 6 months. Patient advised dietary modifications and increased cardiovascular exercise.",
+      "severity_level": "Mild",
+      "recommended_action": "Repeat fasting glucose and HbA1c in 6 months. Continue lifestyle modifications. Low glycemic index diet recommended."
+    },
+    {
+      "report_id": "RPT-P001-002",
+      "date": "2018-09-20",
+      "type": "Oral Glucose Tolerance Test (OGTT)",
+      "category": "Blood Test",
+      "facility": "Deenanath Mangeshkar Hospital, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "fasting_glucose": { "value": 112, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Elevated" },
+        "1_hour_glucose": { "value": 188, "unit": "mg/dL", "reference_range": "<180 mg/dL", "status": "Elevated" },
+        "2_hour_glucose": { "value": 162, "unit": "mg/dL", "reference_range": "<140 mg/dL", "status": "Impaired Glucose Tolerance" },
+        "hba1c": { "value": 6.0, "unit": "%", "reference_range": "<5.7%", "status": "Prediabetes" }
+      },
+      "doctor_notes": "OGTT confirms impaired glucose tolerance. 2-hour value of 162 mg/dL is above normal threshold. HbA1c at 6.0% shows progressive trend despite lifestyle modifications. Genetic predisposition is likely the primary driver. Discussion held regarding future pharmacological intervention if progression continues.",
+      "severity_level": "Moderate",
+      "recommended_action": "Continue strict dietary management. Monitor HbA1c every 3 months. Prepare for potential Metformin initiation if HbA1c reaches 6.5%."
+    },
+    {
+      "report_id": "RPT-P001-003",
+      "date": "2020-06-15",
+      "type": "Blood Test - Comprehensive Metabolic Panel",
+      "category": "Blood Test",
+      "facility": "Ruby Hall Clinic, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "fasting_glucose": { "value": 126, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Diabetic Range" },
+        "hba1c": { "value": 6.5, "unit": "%", "reference_range": "<5.7%", "status": "Diabetic" },
+        "total_cholesterol": { "value": 198, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "Normal (Borderline)" },
+        "ldl_cholesterol": { "value": 122, "unit": "mg/dL", "reference_range": "<100 mg/dL", "status": "Above Optimal" },
+        "hdl_cholesterol": { "value": 52, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Normal" },
+        "triglycerides": { "value": 138, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "Normal" },
+        "serum_creatinine": { "value": 0.9, "unit": "mg/dL", "reference_range": "0.7-1.3 mg/dL", "status": "Normal" },
+        "egfr": { "value": 98, "unit": "mL/min/1.73m²", "reference_range": ">90", "status": "Normal" },
+        "ast": { "value": 24, "unit": "U/L", "reference_range": "10-40 U/L", "status": "Normal" },
+        "alt": { "value": 28, "unit": "U/L", "reference_range": "7-56 U/L", "status": "Normal" }
+      },
+      "doctor_notes": "Fasting glucose 126 mg/dL confirmed on two separate occasions. HbA1c 6.5% meets diagnostic criteria for Type 2 Diabetes Mellitus. Initiating Metformin 500 mg twice daily. Comprehensive metabolic panel shows preserved kidney and liver function. Lipid panel borderline — will monitor. Patient enrolled in diabetes education program.",
+      "severity_level": "Moderate",
+      "recommended_action": "Start Metformin 500 mg BD. Home glucose monitoring. Follow-up in 3 months for HbA1c recheck. Annual kidney function and eye screening."
+    },
+    {
+      "report_id": "RPT-P001-004",
+      "date": "2020-09-18",
+      "type": "Blood Test - HbA1c Follow-up",
+      "category": "Blood Test",
+      "facility": "City Health Diagnostics, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "hba1c": { "value": 6.6, "unit": "%", "reference_range": "<7.0% (target for diabetics)", "status": "Within Target" },
+        "fasting_glucose": { "value": 118, "unit": "mg/dL", "reference_range": "70-130 mg/dL (diabetic target)", "status": "Within Target" },
+        "post_prandial_glucose": { "value": 156, "unit": "mg/dL", "reference_range": "<180 mg/dL (diabetic target)", "status": "Within Target" }
+      },
+      "doctor_notes": "Excellent response to Metformin therapy. HbA1c dropped from 6.5% to 6.6% (stabilized). Fasting glucose well-controlled. No hypoglycemic episodes reported. Patient tolerating medication well with no significant GI side effects. Continue current regimen.",
+      "severity_level": "Low",
+      "recommended_action": "Continue Metformin 500 mg BD. Maintain lifestyle modifications. Recheck HbA1c in 3 months."
+    },
+    {
+      "report_id": "RPT-P001-005",
+      "date": "2021-06-10",
+      "type": "Complete Blood Count (CBC)",
+      "category": "Blood Test",
+      "facility": "Ruby Hall Clinic, Pune",
+      "ordering_doctor": "Dr. Sunita Nair",
+      "detailed_findings": {
+        "hemoglobin": { "value": 14.8, "unit": "g/dL", "reference_range": "13.5-17.5 g/dL", "status": "Normal" },
+        "wbc_count": { "value": 7200, "unit": "/µL", "reference_range": "4500-11000 /µL", "status": "Normal" },
+        "rbc_count": { "value": 5.1, "unit": "million/µL", "reference_range": "4.7-6.1 million/µL", "status": "Normal" },
+        "platelet_count": { "value": 245000, "unit": "/µL", "reference_range": "150000-400000 /µL", "status": "Normal" },
+        "hematocrit": { "value": 44.2, "unit": "%", "reference_range": "38.3-48.6%", "status": "Normal" },
+        "mcv": { "value": 86.7, "unit": "fL", "reference_range": "80-100 fL", "status": "Normal" },
+        "neutrophils": { "value": 58, "unit": "%", "reference_range": "40-70%", "status": "Normal" },
+        "lymphocytes": { "value": 32, "unit": "%", "reference_range": "20-40%", "status": "Normal" },
+        "esr": { "value": 12, "unit": "mm/hr", "reference_range": "0-15 mm/hr", "status": "Normal" }
+      },
+      "doctor_notes": "CBC performed to investigate reported fatigue episodes. All parameters within normal limits. No evidence of anemia, infection, or hematological abnormality. Fatigue likely related to work stress and mildly irregular sleep patterns. Thyroid function tests also normal (TSH 2.8 mIU/L).",
+      "severity_level": "Low",
+      "recommended_action": "No hematological intervention needed. Recommend stress management techniques and consistent sleep schedule."
+    },
+    {
+      "report_id": "RPT-P001-006",
+      "date": "2022-03-22",
+      "type": "Nerve Conduction Study (NCS)",
+      "category": "Specialist Consultation",
+      "facility": "KEM Hospital, Pune",
+      "ordering_doctor": "Dr. Amit Joshi",
+      "specialist": "Neurologist",
+      "detailed_findings": {
+        "median_nerve_motor": { "latency": "3.6 ms", "amplitude": "8.2 mV", "conduction_velocity": "54 m/s", "status": "Normal" },
+        "median_nerve_sensory": { "latency": "2.8 ms", "amplitude": "42 µV", "conduction_velocity": "52 m/s", "status": "Normal" },
+        "ulnar_nerve_motor": { "latency": "2.9 ms", "amplitude": "9.1 mV", "conduction_velocity": "56 m/s", "status": "Normal" },
+        "sural_nerve": { "latency": "3.2 ms", "amplitude": "18 µV", "conduction_velocity": "48 m/s", "status": "Normal" },
+        "peroneal_nerve": { "latency": "4.1 ms", "amplitude": "5.8 mV", "conduction_velocity": "50 m/s", "status": "Normal" },
+        "overall_impression": "No electrophysiological evidence of peripheral neuropathy"
+      },
+      "doctor_notes": "Nerve conduction study performed to evaluate patient's complaint of intermittent tingling in fingertips. All motor and sensory nerve conduction parameters are within normal limits. No evidence of diabetic peripheral neuropathy at this stage. Symptoms likely related to stress-induced paresthesia or positional compression.",
+      "severity_level": "Low",
+      "recommended_action": "No neurological treatment required. Reassure patient. Annual screening recommended given diabetes diagnosis. Optimize glycemic control to prevent future neuropathy."
+    },
+    {
+      "report_id": "RPT-P001-007",
+      "date": "2022-10-05",
+      "type": "Comprehensive Diabetic Review Panel",
+      "category": "Blood Test",
+      "facility": "Deenanath Mangeshkar Hospital, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "hba1c": { "value": 6.7, "unit": "%", "reference_range": "<7.0%", "status": "Within Target" },
+        "fasting_glucose": { "value": 120, "unit": "mg/dL", "reference_range": "70-130 mg/dL", "status": "Within Target" },
+        "serum_creatinine": { "value": 0.95, "unit": "mg/dL", "reference_range": "0.7-1.3 mg/dL", "status": "Normal" },
+        "egfr": { "value": 95, "unit": "mL/min/1.73m²", "reference_range": ">90", "status": "Normal" },
+        "urine_albumin_creatinine_ratio": { "value": 15, "unit": "mg/g", "reference_range": "<30 mg/g", "status": "Normal" },
+        "tsh": { "value": 3.1, "unit": "mIU/L", "reference_range": "0.4-4.0 mIU/L", "status": "Normal" },
+        "vitamin_d": { "value": 28, "unit": "ng/mL", "reference_range": "30-100 ng/mL", "status": "Insufficient" },
+        "vitamin_b12": { "value": 320, "unit": "pg/mL", "reference_range": "200-900 pg/mL", "status": "Normal" }
+      },
+      "doctor_notes": "Annual comprehensive diabetic review. Glycemic control stable with HbA1c 6.7%. Kidney function preserved — no microalbuminuria. Vitamin D slightly insufficient; supplementation recommended. B12 levels normal despite Metformin use (which can deplete B12). Continue current management.",
+      "severity_level": "Low",
+      "recommended_action": "Vitamin D3 supplementation 60,000 IU weekly for 8 weeks, then monthly. Continue Metformin. Monitor B12 annually. Next comprehensive review in 6 months."
+    },
+    {
+      "report_id": "RPT-P001-008",
+      "date": "2023-04-12",
+      "type": "ECG - 12 Lead Electrocardiogram",
+      "category": "Imaging",
+      "facility": "Ruby Hall Clinic, Pune",
+      "ordering_doctor": "Dr. Sunita Nair",
+      "detailed_findings": {
+        "heart_rate": { "value": 72, "unit": "bpm", "status": "Normal" },
+        "rhythm": "Normal Sinus Rhythm",
+        "pr_interval": { "value": 160, "unit": "ms", "reference_range": "120-200 ms", "status": "Normal" },
+        "qrs_duration": { "value": 88, "unit": "ms", "reference_range": "<120 ms", "status": "Normal" },
+        "qt_interval": { "value": 380, "unit": "ms", "status": "Normal" },
+        "axis": "Normal",
+        "st_segment": "No ST elevation or depression",
+        "t_waves": "Normal morphology in all leads",
+        "overall_impression": "Normal ECG. No evidence of ischemia, hypertrophy, or conduction abnormalities."
+      },
+      "doctor_notes": "Routine cardiac screening for diabetic patient. ECG shows normal sinus rhythm with no abnormalities. No evidence of left ventricular hypertrophy or ischemic changes. Cardiac risk currently low given well-controlled diabetes and active lifestyle.",
+      "severity_level": "Low",
+      "recommended_action": "No cardiac intervention required. Annual ECG screening recommended. Continue cardiovascular exercise."
+    },
+    {
+      "report_id": "RPT-P001-009",
+      "date": "2024-01-18",
+      "type": "Diabetic Eye Screening - Fundoscopy",
+      "category": "Specialist Consultation",
+      "facility": "Aditya Jyot Eye Hospital, Pune",
+      "ordering_doctor": "Dr. Priya Sharma",
+      "specialist": "Ophthalmologist",
+      "detailed_findings": {
+        "visual_acuity_right": "20/20",
+        "visual_acuity_left": "20/20",
+        "intraocular_pressure_right": { "value": 14, "unit": "mmHg", "reference_range": "10-21 mmHg", "status": "Normal" },
+        "intraocular_pressure_left": { "value": 15, "unit": "mmHg", "reference_range": "10-21 mmHg", "status": "Normal" },
+        "fundoscopy_right": "Normal optic disc, no microaneurysms, no hemorrhages, no exudates, no neovascularization",
+        "fundoscopy_left": "Normal optic disc, no microaneurysms, no hemorrhages, no exudates, no neovascularization",
+        "macula_right": "Normal foveal reflex",
+        "macula_left": "Normal foveal reflex",
+        "overall_impression": "No evidence of diabetic retinopathy in either eye"
+      },
+      "doctor_notes": "Annual diabetic retinopathy screening. Both eyes show no signs of diabetic eye disease. Visual acuity preserved at 20/20 bilaterally. Intraocular pressures normal. Patient's excellent glycemic control is protective. Continue annual screening.",
+      "severity_level": "Low",
+      "recommended_action": "Annual dilated eye examination. Continue strict glycemic control to prevent retinopathy development."
+    },
+    {
+      "report_id": "RPT-P001-010",
+      "date": "2025-04-10",
+      "type": "Lipid Profile & Cardiovascular Risk Panel",
+      "category": "Blood Test",
+      "facility": "Deenanath Mangeshkar Hospital, Pune",
+      "ordering_doctor": "Dr. Sunita Nair",
+      "detailed_findings": {
+        "total_cholesterol": { "value": 218, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "Borderline High" },
+        "ldl_cholesterol": { "value": 142, "unit": "mg/dL", "reference_range": "<100 mg/dL (diabetic target)", "status": "High for Diabetic Patient" },
+        "hdl_cholesterol": { "value": 48, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Normal (Low end)" },
+        "triglycerides": { "value": 158, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "Borderline High" },
+        "vldl": { "value": 31.6, "unit": "mg/dL", "reference_range": "5-40 mg/dL", "status": "Normal" },
+        "total_cholesterol_hdl_ratio": { "value": 4.5, "unit": "ratio", "reference_range": "<5.0", "status": "Acceptable" },
+        "hs_crp": { "value": 1.8, "unit": "mg/L", "reference_range": "<1.0 mg/L low risk", "status": "Moderate Cardiovascular Risk" },
+        "hba1c": { "value": 6.9, "unit": "%", "reference_range": "<7.0%", "status": "At Target Threshold" }
+      },
+      "doctor_notes": "Lipid panel shows elevated total cholesterol and LDL. For a diabetic patient, LDL target is <100 mg/dL. hs-CRP slightly elevated suggesting mild systemic inflammation. Given diabetes and dyslipidemia as dual risk factors, initiating statin therapy is appropriate. HbA1c at 6.9% — approaching 7.0% threshold.",
+      "severity_level": "Moderate",
+      "recommended_action": "Start Atorvastatin 10 mg daily. Repeat lipid panel in 3 months. If HbA1c exceeds 7.0%, consider adding SGLT2 inhibitor. Dietary counseling for lipid management."
+    },
+    {
+      "report_id": "RPT-P001-011",
+      "date": "2025-10-22",
+      "type": "Lipid Profile - Follow-up (Post-Statin)",
+      "category": "Blood Test",
+      "facility": "City Health Diagnostics, Pune",
+      "ordering_doctor": "Dr. Sunita Nair",
+      "detailed_findings": {
+        "total_cholesterol": { "value": 195, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "Normal" },
+        "ldl_cholesterol": { "value": 118, "unit": "mg/dL", "reference_range": "<100 mg/dL", "status": "Improved but Above Target" },
+        "hdl_cholesterol": { "value": 51, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Normal" },
+        "triglycerides": { "value": 142, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "Normal" },
+        "alt": { "value": 30, "unit": "U/L", "reference_range": "7-56 U/L", "status": "Normal (monitoring for statin effect)" },
+        "ck": { "value": 145, "unit": "U/L", "reference_range": "22-198 U/L", "status": "Normal (no myopathy)" }
+      },
+      "doctor_notes": "Good response to Atorvastatin. Total cholesterol normalized. LDL improved from 142 to 118 mg/dL — continuing downward trend. No statin-related side effects (normal ALT and CK). HDL improved slightly. Continue current dose.",
+      "severity_level": "Low",
+      "recommended_action": "Continue Atorvastatin 10 mg daily. Target LDL <100 mg/dL. Recheck in 6 months. Monitor liver enzymes annually."
+    },
+    {
+      "report_id": "RPT-P001-012",
+      "date": "2026-03-28",
+      "type": "Comprehensive Annual Review - Full Panel",
+      "category": "Blood Test",
+      "facility": "Ruby Hall Clinic, Pune",
+      "ordering_doctor": "Dr. Rajesh Kulkarni",
+      "detailed_findings": {
+        "hba1c": { "value": 6.8, "unit": "%", "reference_range": "<7.0%", "status": "Within Target" },
+        "fasting_glucose": { "value": 122, "unit": "mg/dL", "reference_range": "70-130 mg/dL", "status": "Within Target" },
+        "post_prandial_glucose": { "value": 162, "unit": "mg/dL", "reference_range": "<180 mg/dL", "status": "Within Target" },
+        "serum_creatinine": { "value": 0.92, "unit": "mg/dL", "reference_range": "0.7-1.3 mg/dL", "status": "Normal" },
+        "egfr": { "value": 92, "unit": "mL/min/1.73m²", "reference_range": ">90", "status": "Normal" },
+        "urine_acr": { "value": 18, "unit": "mg/g", "reference_range": "<30 mg/g", "status": "Normal" },
+        "blood_pressure": { "systolic": 118, "diastolic": 76, "unit": "mmHg", "status": "Normal" },
+        "bmi": { "value": 24.1, "unit": "kg/m²", "reference_range": "18.5-24.9", "status": "Normal" },
+        "weight": { "value": 72, "unit": "kg" },
+        "height": { "value": 173, "unit": "cm" }
+      },
+      "doctor_notes": "Current comprehensive review shows well-controlled Type 2 Diabetes with HbA1c 6.8%. All diabetic complication screenings negative — no retinopathy, no nephropathy, no neuropathy. Blood pressure normal. BMI healthy. Patient demonstrates exceptional compliance with medication and lifestyle. Continue current management plan. Low risk of near-term complications.",
+      "severity_level": "Low",
+      "recommended_action": "Continue Metformin 500 mg BD and Atorvastatin 10 mg daily. Annual eye, kidney, and nerve screening. Maintain exercise and dietary habits. Next HbA1c in 3 months."
+    }
+  ],
+  "diagnoses": {
+    "primary": [
+      {
+        "condition": "Type 2 Diabetes Mellitus",
+        "icd_code": "E11.9",
+        "diagnosed_date": "2020-06-15",
+        "status": "Active - Well Controlled",
+        "severity": "Moderate",
+        "managing_doctor": "Dr. Rajesh Kulkarni",
+        "notes": "Genetic predisposition. Both parents diabetic. Progressed from prediabetes (2015) to diabetes (2020) despite excellent lifestyle. Currently well-controlled with Metformin."
+      }
+    ],
+    "secondary": [
+      {
+        "condition": "Prediabetes (historical)",
+        "icd_code": "R73.03",
+        "diagnosed_date": "2015-03-15",
+        "status": "Progressed to Diabetes",
+        "severity": "Mild",
+        "notes": "Initial detection at age 25. Managed with lifestyle modifications for 5 years before progression."
+      },
+      {
+        "condition": "Mild Hyperlipidemia",
+        "icd_code": "E78.5",
+        "diagnosed_date": "2025-04-10",
+        "status": "Active - Improving on Treatment",
+        "severity": "Mild",
+        "notes": "Elevated LDL and total cholesterol. Responding well to Atorvastatin 10 mg."
+      },
+      {
+        "condition": "Vitamin D Insufficiency",
+        "icd_code": "E55.9",
+        "diagnosed_date": "2022-10-05",
+        "status": "Resolved with Supplementation",
+        "severity": "Mild",
+        "notes": "Vitamin D 28 ng/mL. Treated with supplementation. Levels normalized."
+      }
+    ]
+  },
+  "medications": {
+    "current": [
+      {
+        "medication_name": "Metformin",
+        "generic_name": "Metformin Hydrochloride",
+        "dosage": "500 mg",
+        "frequency": "Twice daily (morning and evening with meals)",
+        "route": "Oral",
+        "start_date": "2020-06-15",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Rajesh Kulkarni",
+        "indication": "Type 2 Diabetes Mellitus",
+        "notes": "Well tolerated. No significant GI side effects. First-line therapy.",
+        "refills_remaining": 6
+      },
+      {
+        "medication_name": "Atorvastatin",
+        "generic_name": "Atorvastatin Calcium",
+        "dosage": "10 mg",
+        "frequency": "Once daily at bedtime",
+        "route": "Oral",
+        "start_date": "2025-04-10",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Sunita Nair",
+        "indication": "Hyperlipidemia, Cardiovascular risk reduction",
+        "notes": "Preventive statin therapy. No muscle pain or liver enzyme elevation.",
+        "refills_remaining": 4
+      },
+      {
+        "medication_name": "Vitamin D3",
+        "generic_name": "Cholecalciferol",
+        "dosage": "60,000 IU",
+        "frequency": "Once monthly (maintenance dose)",
+        "route": "Oral",
+        "start_date": "2022-10-05",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Rajesh Kulkarni",
+        "indication": "Vitamin D maintenance",
+        "notes": "Initially weekly for 8 weeks, now monthly maintenance.",
+        "refills_remaining": 3
+      }
+    ],
+    "past": [
+      {
+        "medication_name": "Cetirizine",
+        "dosage": "10 mg",
+        "frequency": "Once daily as needed",
+        "route": "Oral",
+        "start_date": "2010-03-15",
+        "end_date": "2010-05-15",
+        "indication": "Dust mite allergy - seasonal management",
+        "notes": "Used intermittently for allergy symptoms."
+      },
+      {
+        "medication_name": "Ciprofloxacin",
+        "dosage": "500 mg",
+        "frequency": "Twice daily",
+        "route": "Oral",
+        "start_date": "2012-08-22",
+        "end_date": "2012-08-29",
+        "indication": "Urinary tract infection (after Sulfonamide allergy)",
+        "notes": "Switched from Bactrim due to allergic reaction."
+      },
+      {
+        "medication_name": "Paracetamol",
+        "dosage": "500 mg",
+        "frequency": "As needed (max 4 times daily)",
+        "route": "Oral",
+        "start_date": "2010-01-01",
+        "end_date": "2010-01-05",
+        "indication": "Seasonal flu - fever management",
+        "notes": "OTC use for symptomatic relief."
+      }
+    ]
+  },
+  "risk_factors": {
+    "cardiovascular": [
+      {
+        "factor": "Type 2 Diabetes Mellitus",
+        "risk_level": "Moderate",
+        "details": "Diabetes is a major cardiovascular risk factor. Currently well-controlled which mitigates risk.",
+        "modifiable": false
+      },
+      {
+        "factor": "Mild Hyperlipidemia",
+        "risk_level": "Low-Moderate",
+        "details": "Elevated LDL cholesterol being treated with statin. Improving trend.",
+        "modifiable": true
+      },
+      {
+        "factor": "Family history of coronary artery disease",
+        "risk_level": "Moderate",
+        "details": "Paternal grandfather died of cardiac arrest at age 74 with CAD and diabetes.",
+        "modifiable": false
+      }
+    ],
+    "metabolic": [
+      {
+        "factor": "Strong genetic predisposition to diabetes",
+        "risk_level": "High",
+        "details": "Both parents and maternal uncle have Type 2 Diabetes. Paternal grandfather also diabetic.",
+        "modifiable": false
+      },
+      {
+        "factor": "Insulin resistance progression",
+        "risk_level": "Moderate",
+        "details": "Despite excellent lifestyle, glucose tolerance deteriorated over 5 years, indicating strong genetic insulin resistance.",
+        "modifiable": false
+      }
+    ],
+    "lifestyle": [
+      {
+        "factor": "Work-related stress",
+        "risk_level": "Low-Moderate",
+        "details": "IT profession with periods of high stress. Managed through exercise but can impact glucose control and sleep.",
+        "modifiable": true
+      },
+      {
+        "factor": "Occasional sleep disruption",
+        "risk_level": "Low",
+        "details": "Mild insomnia during high-stress work periods. Generally 7 hours average.",
+        "modifiable": true
+      }
+    ]
+  },
+  "symptoms_history": [
+    {
+      "symptom": "Elevated fasting glucose",
+      "first_reported": "2015-03-15",
+      "frequency": "Persistent",
+      "severity": "Mild",
+      "status": "Managed with medication",
+      "related_condition": "Type 2 Diabetes Mellitus",
+      "notes": "Initially 110 mg/dL, progressively increased to 126 mg/dL by 2020. Now controlled at 118-122 mg/dL with Metformin."
+    },
+    {
+      "symptom": "Intermittent fatigue",
+      "first_reported": "2021-03-01",
+      "frequency": "Occasional (during stress periods)",
+      "severity": "Mild",
+      "status": "Ongoing - manageable",
+      "related_condition": "Work stress / Diabetes-related",
+      "notes": "Blood work ruled out anemia and thyroid dysfunction. Attributed to work stress and glucose fluctuations."
+    },
+    {
+      "symptom": "Tingling in fingertips",
+      "first_reported": "2022-01-15",
+      "frequency": "Occasional",
+      "severity": "Mild",
+      "status": "Resolved",
+      "related_condition": "Stress-related paresthesia (not diabetic neuropathy)",
+      "notes": "Nerve conduction study normal. Symptoms attributed to stress and positional compression. Resolved with ergonomic modifications."
+    },
+    {
+      "symptom": "Seasonal nasal congestion",
+      "first_reported": "2010-03-15",
+      "frequency": "Seasonal (spring/monsoon)",
+      "severity": "Mild",
+      "status": "Managed with antihistamines as needed",
+      "related_condition": "Dust mite allergy",
+      "notes": "Manageable with over-the-counter antihistamines when needed."
+    }
+  ],
+  "hospital_visits": [
+    {
+      "visit_id": "HV-P001-001",
+      "date": "2015-03-15",
+      "facility": "City Health Diagnostics, Pune",
+      "type": "Outpatient - Routine Screening",
+      "reason": "Annual health checkup",
+      "doctor": "Dr. Rajesh Kulkarni",
+      "outcome": "Prediabetes detected. Lifestyle modifications advised.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P001-002",
+      "date": "2020-06-15",
+      "facility": "Ruby Hall Clinic, Pune",
+      "type": "Outpatient - Diagnostic",
+      "reason": "Comprehensive metabolic panel for diabetes assessment",
+      "doctor": "Dr. Rajesh Kulkarni",
+      "outcome": "Type 2 Diabetes diagnosed. Metformin initiated. Diabetes education program enrollment.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P001-003",
+      "date": "2022-03-22",
+      "facility": "KEM Hospital, Pune",
+      "type": "Outpatient - Specialist Consultation",
+      "reason": "Nerve conduction study for tingling symptoms",
+      "doctor": "Dr. Amit Joshi (Neurologist)",
+      "outcome": "NCS normal. No diabetic neuropathy. Reassurance provided.",
+      "duration": "Day visit",
+      "follow_up_scheduled": false
+    },
+    {
+      "visit_id": "HV-P001-004",
+      "date": "2023-07-10",
+      "facility": "Home Isolation",
+      "type": "Home Care",
+      "reason": "COVID-19 infection (mild)",
+      "doctor": "Dr. Sunita Nair (Telemedicine)",
+      "outcome": "Recovered in 10 days. Temporary glucose elevation managed with extra monitoring. No hospitalization required.",
+      "duration": "10 days",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P001-005",
+      "date": "2025-04-10",
+      "facility": "Deenanath Mangeshkar Hospital, Pune",
+      "type": "Outpatient - Cardiovascular Evaluation",
+      "reason": "Comprehensive cardiovascular risk assessment",
+      "doctor": "Dr. Sunita Nair",
+      "outcome": "Hyperlipidemia detected. Atorvastatin initiated. ECG normal.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    }
+  ],
+  "preventive_care": [
+    {
+      "action": "Annual HbA1c monitoring",
+      "frequency": "Every 3-6 months",
+      "last_done": "2026-03-28",
+      "next_due": "2026-06-28",
+      "status": "Up to date",
+      "notes": "Regular monitoring since prediabetes diagnosis in 2015."
+    },
+    {
+      "action": "Diabetic retinopathy screening",
+      "frequency": "Annually",
+      "last_done": "2024-01-18",
+      "next_due": "2025-01-18",
+      "status": "Up to date",
+      "notes": "Dilated fundoscopy. No retinopathy detected in any screening."
+    },
+    {
+      "action": "Kidney function monitoring (eGFR + urine ACR)",
+      "frequency": "Annually",
+      "last_done": "2026-03-28",
+      "next_due": "2027-03-28",
+      "status": "Up to date",
+      "notes": "No evidence of diabetic nephropathy."
+    },
+    {
+      "action": "Lipid profile monitoring",
+      "frequency": "Every 6 months (on statin)",
+      "last_done": "2025-10-22",
+      "next_due": "2026-04-22",
+      "status": "Up to date",
+      "notes": "Monitoring statin efficacy and liver function."
+    },
+    {
+      "action": "Annual flu vaccination",
+      "frequency": "Annually",
+      "last_done": "2024-10-15",
+      "next_due": "2025-10-15",
+      "status": "Up to date",
+      "notes": "Recommended for all diabetic patients."
+    },
+    {
+      "action": "Home blood glucose monitoring",
+      "frequency": "Daily (fasting) + Post-meal as needed",
+      "last_done": "2026-06-20",
+      "next_due": "Ongoing",
+      "status": "Active",
+      "notes": "Self-monitoring with home glucometer since 2020."
+    },
+    {
+      "action": "Foot examination for diabetic foot",
+      "frequency": "Annually",
+      "last_done": "2026-03-28",
+      "next_due": "2027-03-28",
+      "status": "Up to date",
+      "notes": "No peripheral artery disease or foot ulceration risk detected."
+    },
+    {
+      "action": "Blood pressure monitoring",
+      "frequency": "Every visit",
+      "last_done": "2026-03-28",
+      "next_due": "Next clinic visit",
+      "status": "Up to date",
+      "notes": "Consistently normal. Last reading 118/76 mmHg."
+    }
+  ],
+  "summary_insights": {
+    "overall_health_status": "Stable and well-managed. Arjun Deshmukh demonstrates exceptional compliance with his diabetes management regimen. Despite a strong genetic predisposition (both parents and paternal grandfather diabetic), he has maintained HbA1c within the target range of <7.0% through a combination of Metformin therapy and disciplined lifestyle. All diabetic complication screenings (retinopathy, nephropathy, neuropathy) have been negative. Recently identified mild hyperlipidemia is responding well to Atorvastatin therapy. Overall, he represents a model of proactive chronic disease management.",
+    "key_risks": [
+      "Strong genetic predisposition to diabetes progression — may require medication intensification (SGLT2 inhibitor or GLP-1 agonist) if HbA1c exceeds 7.0%",
+      "Cardiovascular risk from dual burden of diabetes and hyperlipidemia — requires ongoing lipid management and cardiac monitoring",
+      "Potential for Metformin-induced Vitamin B12 depletion with long-term use",
+      "Work-related stress may impact glycemic control during high-pressure periods",
+      "Family history of diabetic complications (grandfather had nephropathy, uncle has retinopathy) — indicates genetic susceptibility to microvascular complications"
+    ],
+    "progression_pattern": "Linear genetic progression from normal glucose tolerance (age 19-24) → prediabetes (age 25) → gradual glucose deterioration despite excellent lifestyle (ages 26-29) → Type 2 Diabetes diagnosis (age 30). Post-diagnosis: stable glycemic control with minimal fluctuation (HbA1c 6.5-6.9%). New onset mild hyperlipidemia at age 35, likely metabolic syndrome component. The progression pattern is characteristic of strong genetic beta-cell dysfunction with preserved insulin sensitivity from exercise.",
+    "predicted_future_risks": [
+      {
+        "risk": "HbA1c exceeding 7.0% requiring medication adjustment",
+        "probability": "Moderate (40-50% within 3-5 years)",
+        "mitigation": "May need addition of SGLT2 inhibitor (e.g., Dapagliflozin) or GLP-1 receptor agonist (e.g., Liraglutide) which also provide cardiovascular benefit"
+      },
+      {
+        "risk": "Development of mild diabetic retinopathy",
+        "probability": "Low (15-20% within 10 years given current control)",
+        "mitigation": "Maintained by tight glycemic control and annual screening"
+      },
+      {
+        "risk": "Microalbuminuria (early diabetic nephropathy)",
+        "probability": "Low (10-15% within 10 years)",
+        "mitigation": "ACE inhibitor may be considered prophylactically if microalbuminuria develops"
+      },
+      {
+        "risk": "Cardiovascular event (MI, stroke)",
+        "probability": "Low-Moderate (10-year ASCVD risk estimated at 5-8%)",
+        "mitigation": "Statin therapy, blood pressure control, continued exercise, aspirin may be considered"
+      }
+    ]
+  }
+}

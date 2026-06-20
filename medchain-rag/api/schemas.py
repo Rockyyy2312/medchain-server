@@ -54,3 +54,20 @@ class HealthResponse(BaseModel):
     total_vectors: int
     llm_provider: str
     embedding_model: str
+
+
+class CompareRequest(BaseModel):
+    patient_id_1: str = Field(..., description="First patient ID (e.g. P001)")
+    patient_id_2: str = Field(..., description="Second patient ID (e.g. P002)")
+    aspects: Optional[List[str]] = Field(
+        None,
+        description="Optional list of aspects to compare (e.g. ['risk_factors', 'medications', 'lifestyle']). If empty, compares all."
+    )
+
+
+class CompareResponse(BaseModel):
+    comparison: str
+    patient_1_summary: str
+    patient_2_summary: str
+    query: str
+

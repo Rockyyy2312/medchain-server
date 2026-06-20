@@ -214,7 +214,29 @@ QUESTIONS: List[Dict[str, Any]] = [
     {"id": 197, "category": "Access Security & AI Guidance", "question_text": "What privacy or sharing warning should be shown before generating or sharing an answer?", "requires_records": True},
     {"id": 198, "category": "Access Security & AI Guidance", "question_text": "Does the answer avoid giving a definitive diagnosis when the records are incomplete?", "requires_records": True},
     {"id": 199, "category": "Access Security & AI Guidance", "question_text": "Does the answer clearly tell the patient when to contact a clinician or emergency service?", "requires_records": True},
-    {"id": 200, "category": "Access Security & AI Guidance", "question_text": "What follow-up question should the system ask the patient to make the answer safer and more accurate?", "requires_records": True}
+    {"id": 200, "category": "Access Security & AI Guidance", "question_text": "What follow-up question should the system ask the patient to make the answer safer and more accurate?", "requires_records": True},
+
+    # Category 8: Patient Intelligence & Deep Analysis (Q201 - Q220)
+    {"id": 201, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the full medical history of the patient?", "requires_records": True},
+    {"id": 202, "category": "Patient Intelligence & Deep Analysis", "question_text": "What are the risk factors for this patient?", "requires_records": True},
+    {"id": 203, "category": "Patient Intelligence & Deep Analysis", "question_text": "What medications are currently prescribed and what are their dosages?", "requires_records": True},
+    {"id": 204, "category": "Patient Intelligence & Deep Analysis", "question_text": "What abnormalities were found in reports?", "requires_records": True},
+    {"id": 205, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the patient's lifestyle profile?", "requires_records": True},
+    {"id": 206, "category": "Patient Intelligence & Deep Analysis", "question_text": "What are the summary insights for this patient?", "requires_records": True},
+    {"id": 207, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the patient's family medical history?", "requires_records": True},
+    {"id": 208, "category": "Patient Intelligence & Deep Analysis", "question_text": "What chronic conditions does the patient have?", "requires_records": True},
+    {"id": 209, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the patient's complete medical history timeline?", "requires_records": True},
+    {"id": 210, "category": "Patient Intelligence & Deep Analysis", "question_text": "What preventive care actions are recommended for this patient?", "requires_records": True},
+    {"id": 211, "category": "Patient Intelligence & Deep Analysis", "question_text": "What hospital visits has the patient had?", "requires_records": True},
+    {"id": 212, "category": "Patient Intelligence & Deep Analysis", "question_text": "What symptoms has the patient reported over time?", "requires_records": True},
+    {"id": 213, "category": "Patient Intelligence & Deep Analysis", "question_text": "What are the predicted future health risks for this patient?", "requires_records": True},
+    {"id": 214, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the overall health status of this patient?", "requires_records": True},
+    {"id": 215, "category": "Patient Intelligence & Deep Analysis", "question_text": "What allergies does the patient have?", "requires_records": True},
+    {"id": 216, "category": "Patient Intelligence & Deep Analysis", "question_text": "What is the progression pattern of the patient's conditions?", "requires_records": True},
+    {"id": 217, "category": "Patient Intelligence & Deep Analysis", "question_text": "What detailed findings were in the most recent blood test?", "requires_records": True},
+    {"id": 218, "category": "Patient Intelligence & Deep Analysis", "question_text": "What past medications has the patient taken?", "requires_records": True},
+    {"id": 219, "category": "Patient Intelligence & Deep Analysis", "question_text": "What cardiovascular risk factors does the patient have?", "requires_records": True},
+    {"id": 220, "category": "Patient Intelligence & Deep Analysis", "question_text": "What metabolic risk factors does the patient have?", "requires_records": True},
 ]
 
 def get_questions_by_category() -> Dict[str, List[Dict[str, Any]]]:
@@ -248,6 +270,23 @@ def get_suggested_followups(question_id: int) -> List[str]:
         143: [144, 145, 146], # Vitals -> blood test, cholesterol, glucose
         172: [173, 175, 177], # Access grants -> pending requests, revoke access, audit logs
         182: [183, 184, 195], # Format preference -> citations, supporting records, summary format
+        # Patient Intelligence flows
+        201: [202, 203, 206],  # Full history -> risk factors, medications, summary
+        202: [219, 220, 213],  # Risk factors -> cardiovascular, metabolic, future risks
+        203: [218, 204, 210],  # Current meds -> past meds, report abnormalities, preventive care
+        204: [217, 213, 206],  # Report abnormalities -> latest blood test, future risks, summary
+        205: [207, 202, 208],  # Lifestyle -> family history, risk factors, chronic conditions
+        206: [214, 213, 216],  # Summary insights -> overall status, future risks, progression
+        207: [208, 202, 215],  # Family history -> chronic conditions, risk factors, allergies
+        208: [203, 209, 211],  # Chronic conditions -> medications, timeline, hospital visits
+        209: [211, 212, 201],  # Timeline -> hospital visits, symptoms, full history
+        210: [203, 206, 213],  # Preventive care -> medications, summary, future risks
+        211: [209, 212, 204],  # Hospital visits -> timeline, symptoms, abnormalities
+        212: [208, 204, 211],  # Symptoms -> chronic conditions, abnormalities, hospital visits
+        213: [206, 216, 210],  # Future risks -> summary, progression, preventive care
+        214: [206, 202, 213],  # Overall status -> summary, risk factors, future risks
+        219: [220, 205, 213],  # CV risk -> metabolic risk, lifestyle, future risks
+        220: [219, 208, 205],  # Metabolic risk -> CV risk, chronic conditions, lifestyle
     }
 
     q_ids = flow_map.get(question_id)

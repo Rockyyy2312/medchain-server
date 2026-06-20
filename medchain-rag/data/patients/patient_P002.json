@@ -1,0 +1,1322 @@
+{
+  "patient_id": "P002",
+  "metadata": {
+    "created_at": "2026-06-20T00:00:00Z",
+    "last_updated": "2026-06-20T00:00:00Z",
+    "version": "1.0",
+    "schema": "medchain_intelligence_v1",
+    "data_source": "clinical_records_integration"
+  },
+  "demographics": {
+    "full_name": "Karan Malhotra",
+    "age": 38,
+    "date_of_birth": "1988-07-22",
+    "gender": "Male",
+    "blood_group": "B+",
+    "marital_status": "Single",
+    "occupation": "Corporate Manager (IT Sector)",
+    "contact": {
+      "phone": "+91-87654-32109",
+      "email": "karan.malhotra@email.com",
+      "emergency_contact": {
+        "name": "Deepak Malhotra",
+        "relation": "Father",
+        "phone": "+91-87654-32100"
+      }
+    },
+    "address": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    }
+  },
+  "lifestyle": {
+    "smoking": {
+      "status": "Current Smoker",
+      "details": "Started social smoking at age 20 during college. Progressed to 8-10 cigarettes/day by age 25. Increased to nearly a pack/day (18-20 cigarettes) during ages 26-35. Currently reduced to 5-6 cigarettes/day after cardiac event at age 36. Total pack-years: approximately 15.",
+      "pack_years": 15,
+      "current_daily": "5-6 cigarettes",
+      "quit_attempts": [
+        {
+          "date": "2024-08-15",
+          "duration": "3 months",
+          "method": "Cold turkey after cardiac event",
+          "outcome": "Relapsed within 3 months"
+        }
+      ]
+    },
+    "alcohol": {
+      "status": "Occasional (previously heavy)",
+      "details": "Frequent binge drinking during college years (ages 20-25). Regular consumption during corporate years (3-4 drinks, 4-5 times per week during ages 26-34). Currently occasional consumption (1-2 drinks, 1-2 times per week). History of weekend binge drinking.",
+      "current_frequency": "1-2 times per week",
+      "current_amount": "1-2 standard drinks per occasion"
+    },
+    "diet": {
+      "type": "Poor / High-Fat High-Sodium",
+      "details": "Diet consists largely of fast food, fried items, and sugary beverages. During corporate career, relied heavily on canteen food, delivery meals, and processed snacks. Irregular meal timings with frequent skipping of breakfast. High sodium intake from processed foods. Minimal fruit and vegetable consumption. High consumption of caffeinated beverages (4-5 cups of coffee daily).",
+      "daily_calorie_estimate": "2800-3500 kcal (excessive)",
+      "restrictions": []
+    },
+    "exercise": {
+      "status": "Sedentary",
+      "frequency": "Rarely (less than once per week)",
+      "type": ["Occasional walking"],
+      "details": "Minimal physical activity throughout adult life. Prolonged sitting during office hours (10-12 hours/day). No structured exercise routine. Gained approximately 12 kg over 4 years during corporate career (ages 26-30)."
+    },
+    "sleep": {
+      "average_hours": 5.5,
+      "quality": "Poor - irregular patterns, frequent disturbances",
+      "issues": "Chronic sleep deprivation. Late-night work and screen time. Difficulty falling asleep. Frequent awakenings. Possible undiagnosed sleep apnea given weight and snoring history."
+    },
+    "stress_level": "High",
+    "stress_details": "Chronic work-related stress from long hours and demanding corporate environment. No stress management practices. Uses smoking and alcohol as coping mechanisms."
+  },
+  "allergies": [
+    {
+      "allergen": "Aspirin",
+      "reaction": "Gastric irritation and mild bronchospasm",
+      "severity": "Moderate",
+      "diagnosed_date": "2020-11-10",
+      "status": "Active"
+    }
+  ],
+  "family_history": [
+    {
+      "relation": "Father",
+      "condition": "Coronary Artery Disease, Hypertension",
+      "age_at_diagnosis": 52,
+      "current_status": "Underwent angioplasty at age 58. Managing with medication.",
+      "notes": "Father had MI at age 58. Currently 66 years old, on dual antiplatelet therapy and statins."
+    },
+    {
+      "relation": "Mother",
+      "condition": "Hypertension, Hypothyroidism",
+      "age_at_diagnosis": 50,
+      "current_status": "Controlled with medication",
+      "notes": "On Amlodipine and Levothyroxine."
+    },
+    {
+      "relation": "Paternal Uncle",
+      "condition": "Myocardial Infarction",
+      "age_at_diagnosis": 48,
+      "current_status": "Deceased (age 52, sudden cardiac death)",
+      "notes": "Died of sudden cardiac death. Heavy smoker and alcoholic."
+    },
+    {
+      "relation": "Elder Brother",
+      "condition": "Hyperlipidemia",
+      "age_at_diagnosis": 35,
+      "current_status": "Managing with statins",
+      "notes": "Similar lifestyle pattern. Diagnosed with dyslipidemia at 35."
+    }
+  ],
+  "chronic_conditions": [
+    {
+      "condition": "Stage 1 Hypertension",
+      "icd_code": "I10",
+      "diagnosed_date": "2023-05-20",
+      "diagnosed_age": 35,
+      "status": "Active - Moderately Controlled",
+      "severity": "Moderate",
+      "managing_doctor": "Dr. Vikram Sharma",
+      "specialty": "Cardiology",
+      "notes": "Diagnosed at age 35 with consistently elevated BP readings (140-150/90-95 mmHg). Started on Amlodipine 5 mg. Currently moderately controlled due to inconsistent medication compliance and continued smoking."
+    },
+    {
+      "condition": "Hyperlipidemia (Mixed)",
+      "icd_code": "E78.2",
+      "diagnosed_date": "2021-09-14",
+      "diagnosed_age": 33,
+      "status": "Active - Poorly Controlled",
+      "severity": "Moderate",
+      "managing_doctor": "Dr. Vikram Sharma",
+      "specialty": "Cardiology",
+      "notes": "Elevated total cholesterol, LDL, and triglycerides. Initially managed with dietary advice (non-compliant). Started Atorvastatin at age 35. Still elevated due to poor dietary habits and continued smoking."
+    },
+    {
+      "condition": "Chronic Gastritis / GERD",
+      "icd_code": "K29.7",
+      "diagnosed_date": "2017-11-08",
+      "diagnosed_age": 29,
+      "status": "Active - Recurrent",
+      "severity": "Moderate",
+      "managing_doctor": "Dr. Meera Kapoor",
+      "specialty": "Gastroenterology",
+      "notes": "Persistent acid reflux since age 29. Related to smoking, alcohol, stress, and poor dietary habits. On Pantoprazole but symptoms recur when medication is skipped."
+    },
+    {
+      "condition": "Obesity (Class I)",
+      "icd_code": "E66.0",
+      "diagnosed_date": "2020-03-15",
+      "diagnosed_age": 32,
+      "status": "Active",
+      "severity": "Moderate",
+      "managing_doctor": "Dr. Vikram Sharma",
+      "specialty": "Internal Medicine",
+      "notes": "BMI 30.2 at diagnosis. Weight gain of approximately 12 kg between ages 26-30 due to sedentary lifestyle and poor diet. Current BMI 31.5."
+    }
+  ],
+  "medical_history_timeline": [
+    {
+      "year": 2008,
+      "age": 20,
+      "events": [
+        {
+          "event": "Started social smoking",
+          "details": "Began smoking socially during college gatherings. 2-3 cigarettes per week initially.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Regular alcohol consumption began",
+          "details": "Weekend binge drinking with college friends. 5-8 drinks per session.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "age": 21,
+      "events": [
+        {
+          "event": "Smoking increased",
+          "details": "Progressed to daily smoking. 4-5 cigarettes per day.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Weight baseline",
+          "details": "Weight 76 kg, Height 178 cm. BMI 24.0. Normal range.",
+          "category": "Baseline"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "age": 22,
+      "events": [
+        {
+          "event": "First health checkup (college)",
+          "details": "BP 126/82 mmHg (high normal). Fasting glucose 92 mg/dL. Lipids borderline normal. Doctor warned about smoking and diet.",
+          "category": "Screening"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "age": 23,
+      "events": [
+        {
+          "event": "Smoking habit established",
+          "details": "Now smoking 8-10 cigarettes daily. Morning smoker's cough beginning.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "age": 24,
+      "events": [
+        {
+          "event": "Minor respiratory infection",
+          "details": "Bronchitis episode lasting 2 weeks. Required antibiotics. Doctor noted smoking as contributing factor.",
+          "category": "Acute Illness"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "age": 25,
+      "events": [
+        {
+          "event": "Started corporate job",
+          "details": "Joined IT company as project manager. Long working hours (10-12 hours/day). Sedentary desk job.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Smoking increased significantly",
+          "details": "Stress from new job pushed smoking to nearly a pack per day (18-20 cigarettes).",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "age": 26,
+      "events": [
+        {
+          "event": "Weight gain noticed",
+          "details": "Weight increased to 82 kg (6 kg gain in 1 year). BMI 25.9. Entered overweight category. No exercise.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Increased alcohol frequency",
+          "details": "Drinking 3-4 times per week after work. Wine and whiskey. Social and stress-related drinking.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "age": 27,
+      "events": [
+        {
+          "event": "Health screening at office",
+          "details": "BP 132/86 mmHg (elevated). Total cholesterol 212 mg/dL (borderline high). LDL 138 mg/dL. Doctor advised lifestyle changes. Patient largely ignored advice.",
+          "category": "Screening"
+        },
+        {
+          "event": "Recurrent upper respiratory infections",
+          "details": "2-3 episodes of URI in the year. Attributed to smoking and low immunity.",
+          "category": "Acute Illness"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "age": 28,
+      "events": [
+        {
+          "event": "Weight continues to increase",
+          "details": "Weight 86 kg. BMI 27.2. Continued sedentary lifestyle. Diet predominantly fast food and processed meals.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Intermittent acid reflux begins",
+          "details": "Started experiencing heartburn and acid regurgitation after meals, especially after spicy food and alcohol.",
+          "category": "Symptom"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "age": 29,
+      "events": [
+        {
+          "event": "Chronic Gastritis / GERD diagnosed",
+          "details": "Persistent acid reflux and epigastric pain. Upper GI endoscopy showed erythematous gastric mucosa consistent with chronic gastritis. H. pylori negative. Prescribed Pantoprazole 40 mg daily.",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Weight reaches 88 kg",
+          "details": "12 kg gain over 4 years. BMI 27.8. Advised weight loss. Non-compliant.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "age": 30,
+      "events": [
+        {
+          "event": "Fatigue and reduced stamina",
+          "details": "Noticeable reduction in physical stamina. Easily winded climbing stairs. Chronic fatigue attributed to poor sleep, smoking, and deconditioning.",
+          "category": "Symptom"
+        },
+        {
+          "event": "Blood pressure trending upward",
+          "details": "Office BP readings: 136/88 mmHg, 138/90 mmHg on separate occasions. Not yet diagnosed as hypertensive. Monitoring advised.",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "age": 31,
+      "events": [
+        {
+          "event": "Shortness of breath episodes",
+          "details": "Intermittent dyspnea on exertion. Cannot jog or climb more than 2 flights of stairs without breathlessness. Pulmonary function mildly reduced (FEV1/FVC ratio at lower normal limit).",
+          "category": "Symptom"
+        },
+        {
+          "event": "Lipid panel worsening",
+          "details": "Total cholesterol 228 mg/dL, LDL 155 mg/dL, HDL 36 mg/dL, Triglycerides 198 mg/dL. Doctor strongly recommended statins. Patient declined, preferred to try diet changes (did not follow through).",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "age": 32,
+      "events": [
+        {
+          "event": "BMI crosses 30 - Obesity diagnosed",
+          "details": "Weight 96 kg. BMI 30.2. Officially classified as Class I Obesity. Abdominal circumference 102 cm (above 90 cm threshold for Asian males).",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Aspirin intolerance discovered",
+          "details": "Prescribed aspirin for headache. Developed gastric irritation and mild bronchospasm. Documented as aspirin-sensitive.",
+          "category": "Allergy"
+        },
+        {
+          "event": "Occasional chest discomfort",
+          "details": "Vague chest heaviness during stressful periods. Not clearly cardiac. ECG showed nonspecific ST-T changes. Advised follow-up.",
+          "category": "Symptom"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "age": 33,
+      "events": [
+        {
+          "event": "Hyperlipidemia formally diagnosed",
+          "details": "Comprehensive lipid panel: Total cholesterol 242 mg/dL, LDL 168 mg/dL, HDL 34 mg/dL, Triglycerides 218 mg/dL. Formal diagnosis of mixed hyperlipidemia. Despite diagnosis, patient refused statins citing side effect concerns.",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Borderline hypertension documented",
+          "details": "Multiple BP readings: 138/88, 142/90, 136/92 mmHg. Classified as borderline/prehypertension. Lifestyle modifications strongly advised.",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "age": 34,
+      "events": [
+        {
+          "event": "Chest discomfort frequency increases",
+          "details": "More frequent episodes of chest tightness, especially during stressful work situations and after heavy meals. Episodes last 5-10 minutes and resolve with rest.",
+          "category": "Symptom"
+        },
+        {
+          "event": "Sleep study recommended",
+          "details": "Wife (then-girlfriend) reported loud snoring and apparent apneic episodes. Sleep study recommended but patient did not follow through.",
+          "category": "Recommendation"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "age": 35,
+      "events": [
+        {
+          "event": "Stage 1 Hypertension diagnosed",
+          "details": "Confirmed hypertension with multiple readings >140/90 mmHg. 24-hour ambulatory BP monitoring average: 144/92 mmHg. Started on Amlodipine 5 mg daily.",
+          "category": "Diagnosis"
+        },
+        {
+          "event": "Finally started statin therapy",
+          "details": "After persistent counseling and ECG showing borderline changes, patient agreed to Atorvastatin 20 mg daily for hyperlipidemia.",
+          "category": "Treatment"
+        },
+        {
+          "event": "Smoking reduced slightly",
+          "details": "Reduced from pack/day to 10-12 cigarettes/day after hypertension diagnosis. Brief attempt to quit failed.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "age": 36,
+      "events": [
+        {
+          "event": "Minor cardiac event",
+          "details": "Acute episode of chest pain radiating to left arm accompanied by dizziness and diaphoresis while at work. Rushed to emergency department. Troponin mildly elevated (0.08 ng/mL). ECG showed ST depression in leads V4-V6. Diagnosed as unstable angina / NSTEMI. Admitted for observation for 3 days.",
+          "category": "Emergency"
+        },
+        {
+          "event": "Cardiac workup post-event",
+          "details": "2D Echocardiogram: Mild left ventricular hypertrophy, LVEF 55% (low normal). Stress test: Positive for ischemia at high workload. Coronary angiography showed mild-moderate atherosclerotic plaque in LAD (40-50% stenosis). No stent required at this time.",
+          "category": "Evaluation"
+        },
+        {
+          "event": "Medication intensification",
+          "details": "Added Clopidogrel 75 mg daily (aspirin contraindicated), Metoprolol 25 mg twice daily, Nitroglycerin sublingual as needed. Atorvastatin increased to 40 mg.",
+          "category": "Treatment"
+        },
+        {
+          "event": "Temporary smoking cessation",
+          "details": "Stopped smoking for approximately 3 months post cardiac event. Relapsed within 3 months due to work stress.",
+          "category": "Lifestyle"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "age": 37,
+      "events": [
+        {
+          "event": "Follow-up cardiac assessment",
+          "details": "6-month cardiac follow-up. BP 136/84 mmHg (improved but above target). Lipids: Total cholesterol 208 mg/dL (improved), LDL 128 mg/dL. Echocardiogram: LVEF 56%. Mild LVH persists. Smoking resumed (5-6/day).",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Alcohol reduced",
+          "details": "Reduced alcohol to 1-2 times per week after cardiac event. Mostly social occasions only.",
+          "category": "Lifestyle"
+        },
+        {
+          "event": "Liver function borderline",
+          "details": "ALT 52 U/L (slightly elevated, likely alcohol + statin effect). GGT 68 U/L (elevated, alcohol-related). Advised to reduce alcohol further and recheck.",
+          "category": "Monitoring"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "age": 38,
+      "events": [
+        {
+          "event": "Current status assessment",
+          "details": "BP moderately controlled at 134/86 mmHg on Amlodipine + Metoprolol. Cholesterol still elevated (total 205 mg/dL, LDL 125 mg/dL). Still smoking 5-6 cigarettes/day. Weight 94 kg (slight decrease). Reports frequent fatigue, low stamina, occasional breathing issues. Cardiac function stable.",
+          "category": "Follow-up"
+        },
+        {
+          "event": "Pulmonary function follow-up",
+          "details": "Repeat spirometry: FEV1/FVC ratio 0.68 (below 0.70 threshold). Mild obstructive pattern. Early COPD changes suspected. Strong recommendation to quit smoking immediately.",
+          "category": "Evaluation"
+        }
+      ]
+    }
+  ],
+  "medical_reports": [
+    {
+      "report_id": "RPT-P002-001",
+      "date": "2015-09-12",
+      "type": "Blood Test - Lipid Profile & Fasting Glucose",
+      "category": "Blood Test",
+      "facility": "Lilavati Hospital, Mumbai",
+      "ordering_doctor": "Dr. Anand Patel",
+      "detailed_findings": {
+        "total_cholesterol": { "value": 212, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "Borderline High" },
+        "ldl_cholesterol": { "value": 138, "unit": "mg/dL", "reference_range": "<100 mg/dL", "status": "High" },
+        "hdl_cholesterol": { "value": 38, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Low" },
+        "triglycerides": { "value": 178, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "High" },
+        "fasting_glucose": { "value": 98, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Normal (High end)" },
+        "blood_pressure": { "systolic": 132, "diastolic": 86, "unit": "mmHg", "status": "Elevated" }
+      },
+      "doctor_notes": "27-year-old male with concerning lipid profile. HDL low, LDL and triglycerides elevated. Pattern consistent with high-fat diet, sedentary lifestyle, and smoking. Blood pressure elevated but not yet hypertensive. Strong family history of cardiovascular disease. Urgently needs lifestyle modifications: smoking cessation, exercise, and dietary changes.",
+      "severity_level": "Moderate",
+      "recommended_action": "Immediate lifestyle modifications. Reduce saturated fat intake. Begin regular aerobic exercise. Smoking cessation strongly advised. Repeat lipid panel in 3 months. If no improvement, consider statin therapy."
+    },
+    {
+      "report_id": "RPT-P002-002",
+      "date": "2017-11-08",
+      "type": "Upper GI Endoscopy",
+      "category": "Imaging",
+      "facility": "Breach Candy Hospital, Mumbai",
+      "ordering_doctor": "Dr. Meera Kapoor",
+      "specialist": "Gastroenterologist",
+      "detailed_findings": {
+        "esophagus": "Mild erythema at gastroesophageal junction. No Barrett's changes. No strictures.",
+        "stomach": "Diffuse erythematous gastric mucosa in antrum. No ulcers. No masses. Multiple superficial erosions noted.",
+        "duodenum": "Normal mucosa. No ulcers.",
+        "h_pylori_test": "Rapid urease test: Negative",
+        "biopsy": "Chronic superficial gastritis. No intestinal metaplasia. No dysplasia.",
+        "overall_impression": "Chronic erosive gastritis with mild GERD changes at GE junction"
+      },
+      "doctor_notes": "Endoscopy confirms chronic erosive gastritis without H. pylori infection. Changes consistent with chemical gastritis from smoking, alcohol, and NSAIDs. Mild GERD at GE junction. No sinister pathology. Patient must modify lifestyle — stop smoking and alcohol, avoid spicy/fried foods. Starting Pantoprazole 40 mg daily.",
+      "severity_level": "Moderate",
+      "recommended_action": "Pantoprazole 40 mg daily before breakfast. Avoid trigger foods (spicy, fried, acidic). Stop smoking and alcohol. Elevate head of bed. Repeat endoscopy in 1 year if symptoms persist."
+    },
+    {
+      "report_id": "RPT-P002-003",
+      "date": "2019-06-20",
+      "type": "Pulmonary Function Test (Spirometry)",
+      "category": "Specialist Consultation",
+      "facility": "Hinduja Hospital, Mumbai",
+      "ordering_doctor": "Dr. Rahul Desai",
+      "specialist": "Pulmonologist",
+      "detailed_findings": {
+        "fvc": { "value": 4.2, "unit": "L", "predicted": "4.8 L", "percent_predicted": 87.5, "status": "Mildly Reduced" },
+        "fev1": { "value": 3.2, "unit": "L", "predicted": "3.9 L", "percent_predicted": 82.1, "status": "Mildly Reduced" },
+        "fev1_fvc_ratio": { "value": 0.76, "reference_range": ">0.70", "status": "Normal (Lower end)" },
+        "pef": { "value": 7.8, "unit": "L/s", "predicted": "9.5 L/s", "percent_predicted": 82.1, "status": "Mildly Reduced" },
+        "reversibility_test": "Negative (no significant bronchodilator response)",
+        "overall_impression": "Mild reduction in lung volumes. FEV1/FVC ratio preserved but at lower normal limit. Pattern suggests early smoking-related airway changes."
+      },
+      "doctor_notes": "Pulmonary function mildly reduced for age. FEV1/FVC ratio at lower normal limit in a 31-year-old male smoker with approximately 10 pack-years is concerning. Pattern suggests early small airway disease. No reversibility with bronchodilator rules out asthma. This is an early warning sign of potential COPD development if smoking continues. MUST quit smoking to prevent irreversible lung damage.",
+      "severity_level": "Moderate",
+      "recommended_action": "Smoking cessation is CRITICAL. Refer to smoking cessation program. Annual spirometry monitoring. Flu and pneumococcal vaccination recommended. Exercise tolerance may improve with smoking cessation."
+    },
+    {
+      "report_id": "RPT-P002-004",
+      "date": "2020-03-15",
+      "type": "Comprehensive Metabolic Panel + CBC",
+      "category": "Blood Test",
+      "facility": "Lilavati Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "detailed_findings": {
+        "hemoglobin": { "value": 16.2, "unit": "g/dL", "reference_range": "13.5-17.5 g/dL", "status": "Normal (High end - smoker's polycythemia)" },
+        "wbc_count": { "value": 9800, "unit": "/µL", "reference_range": "4500-11000 /µL", "status": "Normal (High end)" },
+        "rbc_count": { "value": 5.8, "unit": "million/µL", "reference_range": "4.7-6.1 million/µL", "status": "Normal (High - compensatory)" },
+        "platelet_count": { "value": 268000, "unit": "/µL", "reference_range": "150000-400000 /µL", "status": "Normal" },
+        "fasting_glucose": { "value": 104, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Impaired Fasting Glucose" },
+        "hba1c": { "value": 5.8, "unit": "%", "reference_range": "<5.7%", "status": "Prediabetic Range" },
+        "serum_creatinine": { "value": 1.1, "unit": "mg/dL", "reference_range": "0.7-1.3 mg/dL", "status": "Normal" },
+        "ast": { "value": 38, "unit": "U/L", "reference_range": "10-40 U/L", "status": "Normal (High end)" },
+        "alt": { "value": 45, "unit": "U/L", "reference_range": "7-56 U/L", "status": "Normal (Elevated - alcohol-related)" },
+        "ggt": { "value": 58, "unit": "U/L", "reference_range": "9-48 U/L", "status": "Elevated (Alcohol marker)" },
+        "uric_acid": { "value": 7.8, "unit": "mg/dL", "reference_range": "3.5-7.2 mg/dL", "status": "Elevated" },
+        "bmi": { "value": 30.2, "unit": "kg/m²", "reference_range": "18.5-24.9", "status": "Obese Class I" },
+        "weight": { "value": 96, "unit": "kg" },
+        "waist_circumference": { "value": 102, "unit": "cm", "reference_range": "<90 cm (Asian male)", "status": "Central Obesity" }
+      },
+      "doctor_notes": "32-year-old obese male smoker with multiple metabolic risk factors. Hemoglobin high end — likely smoker's polycythemia. GGT elevated suggesting alcohol-related liver stress. Uric acid elevated — gout risk. Fasting glucose impaired and HbA1c in prediabetic range. This patient has metabolic syndrome: central obesity + dyslipidemia + impaired glucose + elevated BP. Very high cardiovascular risk profile for age. Aggressive lifestyle intervention URGENTLY needed.",
+      "severity_level": "High",
+      "recommended_action": "URGENT: Smoking cessation, alcohol reduction, weight loss program. Monitor glucose every 3 months — at risk for Type 2 Diabetes. Refer to nutritionist. Start structured exercise. Consider metabolic syndrome clinic referral. Recheck liver enzymes in 3 months."
+    },
+    {
+      "report_id": "RPT-P002-005",
+      "date": "2021-09-14",
+      "type": "Lipid Profile - Comprehensive",
+      "category": "Blood Test",
+      "facility": "Breach Candy Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "detailed_findings": {
+        "total_cholesterol": { "value": 242, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "High" },
+        "ldl_cholesterol": { "value": 168, "unit": "mg/dL", "reference_range": "<100 mg/dL", "status": "Very High" },
+        "hdl_cholesterol": { "value": 34, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Low (Cardiovascular Risk)" },
+        "triglycerides": { "value": 218, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "High" },
+        "vldl": { "value": 43.6, "unit": "mg/dL", "reference_range": "5-40 mg/dL", "status": "High" },
+        "total_cholesterol_hdl_ratio": { "value": 7.1, "unit": "ratio", "reference_range": "<5.0", "status": "High Risk" },
+        "non_hdl_cholesterol": { "value": 208, "unit": "mg/dL", "reference_range": "<130 mg/dL", "status": "Very High" },
+        "apolipoprotein_b": { "value": 142, "unit": "mg/dL", "reference_range": "<90 mg/dL", "status": "Very High" }
+      },
+      "doctor_notes": "Severely deranged lipid profile. All parameters significantly outside target ranges. TC/HDL ratio of 7.1 indicates very high cardiovascular risk. ApoB level confirms atherogenic lipid phenotype. Patient has refused statins citing concerns about muscle pain. This is a clinical emergency — at his age with this lipid profile plus smoking, the 10-year ASCVD risk is substantially elevated. Will attempt another counseling session regarding statin initiation.",
+      "severity_level": "High",
+      "recommended_action": "STRONGLY recommend starting high-intensity statin (Atorvastatin 20-40 mg). If patient still refuses, document refusal against medical advice. Strict dietary modifications. Omega-3 supplementation for triglycerides. Follow up in 1 month."
+    },
+    {
+      "report_id": "RPT-P002-006",
+      "date": "2023-05-20",
+      "type": "24-Hour Ambulatory Blood Pressure Monitoring",
+      "category": "Specialist Consultation",
+      "facility": "Kokilaben Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "specialist": "Cardiologist",
+      "detailed_findings": {
+        "24hr_average_systolic": { "value": 144, "unit": "mmHg", "reference_range": "<130 mmHg", "status": "Elevated" },
+        "24hr_average_diastolic": { "value": 92, "unit": "mmHg", "reference_range": "<80 mmHg", "status": "Elevated" },
+        "daytime_average": { "systolic": 148, "diastolic": 94, "unit": "mmHg", "status": "Stage 1 Hypertension" },
+        "nighttime_average": { "systolic": 136, "diastolic": 86, "unit": "mmHg", "status": "Non-Dipper Pattern" },
+        "peak_reading": { "systolic": 168, "diastolic": 102, "unit": "mmHg", "time": "14:30", "context": "During work stress" },
+        "dipping_status": "Non-Dipper (nighttime BP reduction <10%)",
+        "heart_rate_average": { "value": 82, "unit": "bpm", "reference_range": "60-80 bpm", "status": "Mildly Elevated" }
+      },
+      "doctor_notes": "24-hour ABPM confirms Stage 1 Hypertension with non-dipper pattern. Non-dipping is an independent cardiovascular risk factor. Peak BP occurs during work hours reflecting stress-related hypertension. Average daytime BP 148/94 mmHg is clearly in hypertensive range. Initiating antihypertensive therapy. Given the non-dipper pattern, evening dosing may be considered.",
+      "severity_level": "Moderate",
+      "recommended_action": "Start Amlodipine 5 mg daily. Home BP monitoring twice daily. Salt-restricted diet (<5g/day). Stress management counseling. Smoking cessation. Recheck in 4 weeks. Target BP <130/80 mmHg."
+    },
+    {
+      "report_id": "RPT-P002-007",
+      "date": "2024-08-10",
+      "type": "ECG - 12 Lead + Cardiac Enzymes (Emergency)",
+      "category": "Imaging",
+      "facility": "Lilavati Hospital, Mumbai (Emergency Department)",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "detailed_findings": {
+        "heart_rate": { "value": 96, "unit": "bpm", "status": "Tachycardia" },
+        "rhythm": "Sinus Tachycardia",
+        "pr_interval": { "value": 168, "unit": "ms", "reference_range": "120-200 ms", "status": "Normal" },
+        "qrs_duration": { "value": 92, "unit": "ms", "reference_range": "<120 ms", "status": "Normal" },
+        "st_segment": "ST depression (1.5 mm) in leads V4, V5, V6 and leads I, aVL",
+        "t_waves": "T-wave inversion in V5, V6",
+        "axis": "Left axis deviation",
+        "lvh_criteria": "Sokolow-Lyon borderline positive",
+        "overall_impression": "Sinus tachycardia with ST-T changes suggestive of subendocardial ischemia. LVH pattern.",
+        "troponin_i": { "value": 0.08, "unit": "ng/mL", "reference_range": "<0.04 ng/mL", "status": "Elevated (Myocardial injury)" },
+        "troponin_i_6hr": { "value": 0.12, "unit": "ng/mL", "status": "Rising trend" },
+        "ck_mb": { "value": 28, "unit": "U/L", "reference_range": "0-25 U/L", "status": "Mildly Elevated" },
+        "bnp": { "value": 180, "unit": "pg/mL", "reference_range": "<100 pg/mL", "status": "Elevated" }
+      },
+      "doctor_notes": "36-year-old male presents with acute chest pain radiating to left arm, dizziness, and diaphoresis. ECG shows significant ST-T changes in lateral leads consistent with ischemia. Troponin elevated and rising. Diagnosis: NSTEMI / Unstable Angina. Immediate dual antiplatelet therapy (Clopidogrel, as patient is aspirin-sensitive), IV heparin, and Metoprolol initiated. Patient admitted to CCU for monitoring. Urgent cardiology consultation and echocardiogram ordered.",
+      "severity_level": "Critical",
+      "recommended_action": "CCU admission. Continuous cardiac monitoring. Serial troponins every 6 hours. Echocardiogram within 24 hours. Consider coronary angiography within 48-72 hours. ABSOLUTE smoking cessation. Full cardiac rehabilitation program post-discharge."
+    },
+    {
+      "report_id": "RPT-P002-008",
+      "date": "2024-08-12",
+      "type": "2D Echocardiogram",
+      "category": "Imaging",
+      "facility": "Lilavati Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "specialist": "Cardiologist",
+      "detailed_findings": {
+        "lvef": { "value": 55, "unit": "%", "reference_range": "55-70%", "status": "Low Normal" },
+        "left_ventricle": {
+          "ivs_thickness": { "value": 12, "unit": "mm", "reference_range": "6-11 mm", "status": "Mild Hypertrophy" },
+          "lvpw_thickness": { "value": 11, "unit": "mm", "reference_range": "6-11 mm", "status": "Borderline" },
+          "lv_mass_index": { "value": 118, "unit": "g/m²", "reference_range": "<95 g/m² (male)", "status": "Mild LVH" },
+          "regional_wall_motion": "Mild hypokinesia of distal lateral wall"
+        },
+        "right_ventricle": "Normal size and function",
+        "valves": {
+          "mitral": "Trivial regurgitation (physiological)",
+          "aortic": "Normal",
+          "tricuspid": "Normal",
+          "pulmonary": "Normal"
+        },
+        "diastolic_function": "Grade 1 diastolic dysfunction (impaired relaxation pattern)",
+        "pericardium": "Normal, no effusion",
+        "aortic_root": "Normal diameter",
+        "overall_impression": "Mild concentric LVH (hypertensive heart disease). LVEF low normal at 55%. Mild regional wall motion abnormality in territory consistent with LAD ischemia. Grade 1 diastolic dysfunction."
+      },
+      "doctor_notes": "Echocardiogram shows consequences of uncontrolled hypertension (LVH) and acute ischemic event (regional wall motion abnormality). LVEF 55% is at the lower limit of normal. Grade 1 diastolic dysfunction is consistent with hypertensive heart disease. These findings emphasize the urgent need for aggressive risk factor modification. Patient is 36 years old — these changes are premature and largely preventable.",
+      "severity_level": "High",
+      "recommended_action": "Aggressive BP control (target <130/80). Continue beta-blocker (Metoprolol). Coronary angiography to assess extent of disease. Cardiac rehabilitation. Mandatory smoking cessation. Repeat echocardiogram in 6 months."
+    },
+    {
+      "report_id": "RPT-P002-009",
+      "date": "2024-08-14",
+      "type": "Coronary Angiography",
+      "category": "Imaging",
+      "facility": "Lilavati Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "specialist": "Interventional Cardiologist",
+      "detailed_findings": {
+        "left_main": "Normal, no stenosis",
+        "lad": {
+          "proximal": "20% diffuse plaque",
+          "mid": "40-50% eccentric plaque (culprit lesion)",
+          "distal": "Normal"
+        },
+        "lcx": {
+          "proximal": "10% plaque",
+          "distal": "Normal"
+        },
+        "rca": {
+          "proximal": "15% plaque",
+          "mid": "20% diffuse plaque",
+          "distal": "Normal"
+        },
+        "timi_flow": "TIMI III flow in all vessels",
+        "collaterals": "None",
+        "lv_end_diastolic_pressure": { "value": 18, "unit": "mmHg", "reference_range": "3-12 mmHg", "status": "Elevated" },
+        "overall_impression": "Non-obstructive coronary artery disease. Mild-moderate atherosclerotic plaque in mid LAD (40-50% stenosis) — likely culprit for the NSTEMI. Diffuse mild atheromatous changes in other vessels. No intervention required at this time."
+      },
+      "doctor_notes": "Angiography reveals non-obstructive CAD with the culprit lesion being a 40-50% plaque in the mid LAD. While this does not require stenting at this time, the diffuse atheromatous changes throughout the coronary tree in a 36-year-old are alarming. This represents accelerated atherosclerosis driven by smoking, dyslipidemia, hypertension, and obesity. LVEDP is elevated suggesting diastolic heart failure beginning. Without aggressive risk factor modification, this patient is at HIGH risk for a major cardiac event within the next 5-10 years.",
+      "severity_level": "High",
+      "recommended_action": "Medical management (no PCI needed now). High-intensity statin (Atorvastatin 40 mg). Aggressive BP control. Clopidogrel for 12 months. ABSOLUTE smoking cessation. Weight loss. Cardiac rehabilitation program. Follow-up angiography or CTCA in 2 years or sooner if symptoms recur."
+    },
+    {
+      "report_id": "RPT-P002-010",
+      "date": "2025-03-18",
+      "type": "Liver Function Test Panel",
+      "category": "Blood Test",
+      "facility": "Hinduja Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "detailed_findings": {
+        "total_bilirubin": { "value": 0.9, "unit": "mg/dL", "reference_range": "0.1-1.2 mg/dL", "status": "Normal" },
+        "direct_bilirubin": { "value": 0.3, "unit": "mg/dL", "reference_range": "0-0.3 mg/dL", "status": "Normal" },
+        "ast": { "value": 42, "unit": "U/L", "reference_range": "10-40 U/L", "status": "Mildly Elevated" },
+        "alt": { "value": 52, "unit": "U/L", "reference_range": "7-56 U/L", "status": "Borderline Elevated" },
+        "alp": { "value": 98, "unit": "U/L", "reference_range": "44-147 U/L", "status": "Normal" },
+        "ggt": { "value": 68, "unit": "U/L", "reference_range": "9-48 U/L", "status": "Elevated" },
+        "albumin": { "value": 4.1, "unit": "g/dL", "reference_range": "3.5-5.5 g/dL", "status": "Normal" },
+        "total_protein": { "value": 7.2, "unit": "g/dL", "reference_range": "6.0-8.3 g/dL", "status": "Normal" },
+        "fibroscan_score": { "value": 6.8, "unit": "kPa", "reference_range": "<7.0 kPa (no fibrosis)", "status": "Borderline" }
+      },
+      "doctor_notes": "Liver enzymes show a pattern of mild hepatocellular stress. Elevated GGT is a specific marker of alcohol use. AST/ALT ratio <1 suggests alcoholic liver disease is not advanced. Fibroscan score is borderline at 6.8 kPa — at the threshold of F0-F1 (no significant fibrosis but approaching it). This is a combined effect of alcohol consumption, high-dose statin, and obesity (non-alcoholic fatty liver disease component). Strongly recommend alcohol cessation and weight loss.",
+      "severity_level": "Moderate",
+      "recommended_action": "Reduce alcohol intake significantly (ideally abstain). Monitor liver enzymes every 3 months. Continue statin but monitor hepatotoxicity. Weight loss program. Repeat Fibroscan in 6 months. If enzymes rise >3x ULN, consider statin dose reduction."
+    },
+    {
+      "report_id": "RPT-P002-011",
+      "date": "2025-08-22",
+      "type": "Cardiac Stress Test (Treadmill)",
+      "category": "Specialist Consultation",
+      "facility": "Kokilaben Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "specialist": "Cardiologist",
+      "detailed_findings": {
+        "protocol": "Modified Bruce Protocol",
+        "exercise_duration": { "value": 7.5, "unit": "minutes", "expected": ">9 minutes for age", "status": "Below Expected" },
+        "peak_heart_rate": { "value": 156, "unit": "bpm", "target": "160 bpm (88% of max)", "percent_achieved": 97.5, "status": "Near Target" },
+        "peak_bp": { "systolic": 188, "diastolic": 98, "unit": "mmHg", "status": "Exaggerated BP Response" },
+        "mets_achieved": { "value": 7.2, "reference_range": ">10 METs for age", "status": "Reduced Functional Capacity" },
+        "st_changes": "1 mm ST depression in V5 at peak exercise. Resolved in recovery.",
+        "symptoms": "Chest tightness and breathlessness at Stage 3",
+        "arrhythmias": "Occasional PVCs during exercise (non-sustained)",
+        "duke_treadmill_score": { "value": -2, "interpretation": "Moderate risk" },
+        "overall_impression": "Positive stress test for ischemia at high workload. Reduced functional capacity. Exaggerated BP response suggesting underlying vascular stiffness."
+      },
+      "doctor_notes": "Stress test positive for ischemia, consistent with known mid-LAD disease. Functional capacity is reduced for a 37-year-old (7.2 METs vs expected >10). Exaggerated BP response is a predictor of future hypertension worsening. Occasional PVCs during exercise are concerning but not sustained. Duke score indicates moderate risk. Results consistent with stable angina pattern. Medical management remains appropriate but cardiac rehabilitation is essential.",
+      "severity_level": "Moderate-High",
+      "recommended_action": "Continue current cardiac medications. Cardiac rehabilitation program (structured, supervised exercise). Repeat stress test in 6-12 months. If symptoms worsen, consider CT coronary angiography to assess plaque progression."
+    },
+    {
+      "report_id": "RPT-P002-012",
+      "date": "2026-04-15",
+      "type": "Comprehensive Annual Review - Full Panel",
+      "category": "Blood Test",
+      "facility": "Lilavati Hospital, Mumbai",
+      "ordering_doctor": "Dr. Vikram Sharma",
+      "detailed_findings": {
+        "total_cholesterol": { "value": 205, "unit": "mg/dL", "reference_range": "<200 mg/dL", "status": "Borderline High" },
+        "ldl_cholesterol": { "value": 125, "unit": "mg/dL", "reference_range": "<70 mg/dL (post-NSTEMI target)", "status": "Above Target" },
+        "hdl_cholesterol": { "value": 38, "unit": "mg/dL", "reference_range": ">40 mg/dL", "status": "Low" },
+        "triglycerides": { "value": 195, "unit": "mg/dL", "reference_range": "<150 mg/dL", "status": "High" },
+        "fasting_glucose": { "value": 108, "unit": "mg/dL", "reference_range": "70-100 mg/dL", "status": "Impaired" },
+        "hba1c": { "value": 5.9, "unit": "%", "reference_range": "<5.7%", "status": "Prediabetes" },
+        "blood_pressure": { "systolic": 134, "diastolic": 86, "unit": "mmHg", "status": "Above Target" },
+        "serum_creatinine": { "value": 1.05, "unit": "mg/dL", "reference_range": "0.7-1.3 mg/dL", "status": "Normal" },
+        "hs_crp": { "value": 3.8, "unit": "mg/L", "reference_range": "<1.0 mg/L low risk", "status": "High Cardiovascular Risk" },
+        "bmi": { "value": 31.5, "unit": "kg/m²", "reference_range": "18.5-24.9", "status": "Obese Class I" },
+        "weight": { "value": 94, "unit": "kg" },
+        "spirometry_fev1_fvc": { "value": 0.68, "reference_range": ">0.70", "status": "Below Normal (Obstructive)" }
+      },
+      "doctor_notes": "38-year-old male with multiple active cardiovascular risk factors. Despite medication improvements, targets are not being met due to continued smoking and poor lifestyle compliance. Key concerns: (1) LDL still 125 mg/dL vs target <70 for established CAD, (2) HDL remains low, (3) HbA1c now 5.9% — approaching diabetes threshold, (4) hs-CRP 3.8 indicates high systemic inflammation and ongoing cardiovascular risk, (5) Spirometry now showing obstructive pattern (FEV1/FVC 0.68) — early COPD likely. This patient is on a trajectory toward diabetes, progressive CAD, and COPD if smoking is not stopped immediately.",
+      "severity_level": "High",
+      "recommended_action": "URGENT: Increase Atorvastatin to 80 mg or add Ezetimibe for LDL target. Nicotine replacement therapy for smoking cessation. Consider Metformin for prediabetes prevention. Refer to pulmonologist for COPD evaluation. Cardiac rehabilitation continuation. Weight management program. Consider adding ACE inhibitor for additional cardioprotection. Follow-up in 6 weeks."
+    }
+  ],
+  "diagnoses": {
+    "primary": [
+      {
+        "condition": "Stage 1 Hypertension",
+        "icd_code": "I10",
+        "diagnosed_date": "2023-05-20",
+        "status": "Active - Moderately Controlled",
+        "severity": "Moderate",
+        "managing_doctor": "Dr. Vikram Sharma",
+        "notes": "Non-dipper pattern on ABPM. On Amlodipine 5 mg and Metoprolol 25 mg BD. BP still above target at 134/86 mmHg."
+      },
+      {
+        "condition": "Mixed Hyperlipidemia",
+        "icd_code": "E78.2",
+        "diagnosed_date": "2021-09-14",
+        "status": "Active - Partially Controlled",
+        "severity": "Moderate-High",
+        "managing_doctor": "Dr. Vikram Sharma",
+        "notes": "On Atorvastatin 40 mg. LDL improved but still above post-CAD target of <70 mg/dL."
+      },
+      {
+        "condition": "Coronary Artery Disease (Non-Obstructive)",
+        "icd_code": "I25.10",
+        "diagnosed_date": "2024-08-14",
+        "status": "Active - Stable",
+        "severity": "High",
+        "managing_doctor": "Dr. Vikram Sharma",
+        "notes": "Mid-LAD 40-50% stenosis. NSTEMI event in August 2024. Currently on medical management."
+      }
+    ],
+    "secondary": [
+      {
+        "condition": "Chronic Gastritis / GERD",
+        "icd_code": "K29.7",
+        "diagnosed_date": "2017-11-08",
+        "status": "Active - Recurrent",
+        "severity": "Moderate",
+        "notes": "Endoscopy-confirmed erosive gastritis. On Pantoprazole. Recurs with dietary indiscretions."
+      },
+      {
+        "condition": "Obesity Class I",
+        "icd_code": "E66.0",
+        "diagnosed_date": "2020-03-15",
+        "status": "Active",
+        "severity": "Moderate",
+        "notes": "BMI 31.5. Central obesity with waist circumference 102 cm."
+      },
+      {
+        "condition": "Prediabetes",
+        "icd_code": "R73.03",
+        "diagnosed_date": "2020-03-15",
+        "status": "Active - At Risk for Progression",
+        "severity": "Moderate",
+        "notes": "HbA1c 5.9%. Fasting glucose 108 mg/dL. High risk for Type 2 Diabetes."
+      },
+      {
+        "condition": "Early COPD Changes (Suspected)",
+        "icd_code": "J44.1",
+        "diagnosed_date": "2026-04-15",
+        "status": "Under Evaluation",
+        "severity": "Moderate",
+        "notes": "FEV1/FVC ratio 0.68. Needs formal COPD diagnosis with pulmonologist."
+      },
+      {
+        "condition": "Mild Left Ventricular Hypertrophy",
+        "icd_code": "I51.7",
+        "diagnosed_date": "2024-08-12",
+        "status": "Active",
+        "severity": "Mild-Moderate",
+        "notes": "Hypertensive heart disease. LV mass index 118 g/m². Grade 1 diastolic dysfunction."
+      }
+    ]
+  },
+  "medications": {
+    "current": [
+      {
+        "medication_name": "Amlodipine",
+        "generic_name": "Amlodipine Besylate",
+        "dosage": "5 mg",
+        "frequency": "Once daily in the morning",
+        "route": "Oral",
+        "start_date": "2023-05-20",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Vikram Sharma",
+        "indication": "Stage 1 Hypertension",
+        "notes": "Calcium channel blocker. Mild pedal edema reported as side effect.",
+        "refills_remaining": 3
+      },
+      {
+        "medication_name": "Metoprolol Succinate",
+        "generic_name": "Metoprolol Succinate ER",
+        "dosage": "25 mg",
+        "frequency": "Twice daily",
+        "route": "Oral",
+        "start_date": "2024-08-10",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Vikram Sharma",
+        "indication": "Post-NSTEMI, Heart rate control, Blood pressure management",
+        "notes": "Beta-blocker added post cardiac event. Provides rate control and cardioprotection.",
+        "refills_remaining": 5
+      },
+      {
+        "medication_name": "Atorvastatin",
+        "generic_name": "Atorvastatin Calcium",
+        "dosage": "40 mg",
+        "frequency": "Once daily at bedtime",
+        "route": "Oral",
+        "start_date": "2024-08-10",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Vikram Sharma",
+        "indication": "Hyperlipidemia, Post-NSTEMI secondary prevention",
+        "notes": "Dose increased from 20 mg to 40 mg post cardiac event. LDL still above post-CAD target. May need dose increase to 80 mg or addition of Ezetimibe.",
+        "refills_remaining": 4
+      },
+      {
+        "medication_name": "Clopidogrel",
+        "generic_name": "Clopidogrel Bisulfate",
+        "dosage": "75 mg",
+        "frequency": "Once daily",
+        "route": "Oral",
+        "start_date": "2024-08-10",
+        "end_date": "2025-08-10",
+        "prescribing_doctor": "Dr. Vikram Sharma",
+        "indication": "Antiplatelet therapy post-NSTEMI (aspirin-sensitive patient)",
+        "notes": "Used in place of aspirin due to aspirin intolerance. 12-month course post cardiac event. May be continued as single antiplatelet thereafter.",
+        "refills_remaining": 0
+      },
+      {
+        "medication_name": "Pantoprazole",
+        "generic_name": "Pantoprazole Sodium",
+        "dosage": "40 mg",
+        "frequency": "Once daily before breakfast",
+        "route": "Oral",
+        "start_date": "2017-11-08",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Meera Kapoor",
+        "indication": "Chronic Gastritis / GERD",
+        "notes": "Long-term PPI therapy. Also provides GI protection with Clopidogrel. Periodic review for necessity.",
+        "refills_remaining": 6
+      },
+      {
+        "medication_name": "Nitroglycerin SL",
+        "generic_name": "Nitroglycerin",
+        "dosage": "0.5 mg",
+        "frequency": "As needed for chest pain",
+        "route": "Sublingual",
+        "start_date": "2024-08-10",
+        "end_date": null,
+        "prescribing_doctor": "Dr. Vikram Sharma",
+        "indication": "Angina relief",
+        "notes": "PRN use. If chest pain persists after 3 tablets (5 min apart), seek emergency care immediately.",
+        "refills_remaining": 2
+      }
+    ],
+    "past": [
+      {
+        "medication_name": "Amlodipine",
+        "dosage": "5 mg",
+        "frequency": "Once daily",
+        "route": "Oral",
+        "start_date": "2023-05-20",
+        "end_date": null,
+        "indication": "Hypertension (continued as current)",
+        "notes": "Initially monotherapy. Now part of combination regimen."
+      },
+      {
+        "medication_name": "Atorvastatin",
+        "dosage": "20 mg",
+        "frequency": "Once daily",
+        "route": "Oral",
+        "start_date": "2023-05-20",
+        "end_date": "2024-08-10",
+        "indication": "Hyperlipidemia",
+        "notes": "Initial statin dose. Increased to 40 mg after NSTEMI."
+      },
+      {
+        "medication_name": "Ranitidine",
+        "dosage": "150 mg",
+        "frequency": "Twice daily",
+        "route": "Oral",
+        "start_date": "2017-01-15",
+        "end_date": "2017-11-08",
+        "indication": "Acid reflux (prior to formal GERD diagnosis)",
+        "notes": "Switched to Pantoprazole after endoscopy. Ranitidine later withdrawn from market."
+      },
+      {
+        "medication_name": "Amoxicillin",
+        "dosage": "500 mg",
+        "frequency": "Three times daily",
+        "route": "Oral",
+        "start_date": "2012-03-10",
+        "end_date": "2012-03-17",
+        "indication": "Acute bronchitis",
+        "notes": "7-day course for smoking-related bronchitis."
+      },
+      {
+        "medication_name": "IV Heparin",
+        "dosage": "Variable (weight-based)",
+        "frequency": "Continuous infusion",
+        "route": "Intravenous",
+        "start_date": "2024-08-10",
+        "end_date": "2024-08-13",
+        "indication": "Acute NSTEMI - Anticoagulation",
+        "notes": "Hospital-administered during CCU stay."
+      }
+    ]
+  },
+  "risk_factors": {
+    "cardiovascular": [
+      {
+        "factor": "Active smoking (15 pack-years)",
+        "risk_level": "Very High",
+        "details": "Current smoker with 15 pack-year history. Single most modifiable risk factor. Smoking damages endothelium, promotes plaque formation, raises BP, and reduces HDL.",
+        "modifiable": true
+      },
+      {
+        "factor": "Established coronary artery disease",
+        "risk_level": "Very High",
+        "details": "Documented mid-LAD plaque (40-50%) with prior NSTEMI. Diffuse atheromatous changes. High risk for future major cardiac events.",
+        "modifiable": false
+      },
+      {
+        "factor": "Uncontrolled hyperlipidemia",
+        "risk_level": "High",
+        "details": "LDL 125 mg/dL vs target <70 mg/dL post-CAD. HDL persistently low at 38 mg/dL. Atherogenic lipid phenotype.",
+        "modifiable": true
+      },
+      {
+        "factor": "Hypertension (moderately controlled)",
+        "risk_level": "Moderate-High",
+        "details": "BP 134/86 mmHg on dual therapy. Non-dipper pattern on ABPM. Target <130/80 not achieved.",
+        "modifiable": true
+      },
+      {
+        "factor": "Family history of premature CAD",
+        "risk_level": "High",
+        "details": "Father had MI at 58, angioplasty. Paternal uncle died of sudden cardiac death at 52.",
+        "modifiable": false
+      },
+      {
+        "factor": "Obesity (BMI 31.5, central obesity)",
+        "risk_level": "High",
+        "details": "Central obesity with waist circumference 102 cm. Visceral fat contributes to insulin resistance, inflammation, and atherogenesis.",
+        "modifiable": true
+      },
+      {
+        "factor": "Elevated hs-CRP (3.8 mg/L)",
+        "risk_level": "High",
+        "details": "Indicates ongoing systemic inflammation and active atherosclerotic process.",
+        "modifiable": true
+      }
+    ],
+    "metabolic": [
+      {
+        "factor": "Metabolic Syndrome",
+        "risk_level": "High",
+        "details": "Meets 4 of 5 criteria: central obesity, elevated triglycerides, low HDL, elevated BP, impaired fasting glucose. Full metabolic syndrome diagnosis.",
+        "modifiable": true
+      },
+      {
+        "factor": "Prediabetes (HbA1c 5.9%)",
+        "risk_level": "High",
+        "details": "At high risk for progression to Type 2 Diabetes given current lifestyle. HbA1c trending upward.",
+        "modifiable": true
+      },
+      {
+        "factor": "Elevated uric acid",
+        "risk_level": "Moderate",
+        "details": "Uric acid 7.8 mg/dL. Risk of gout and also an independent cardiovascular risk marker.",
+        "modifiable": true
+      },
+      {
+        "factor": "Borderline liver stress (elevated GGT)",
+        "risk_level": "Moderate",
+        "details": "Alcohol and obesity causing hepatic stress. Fibroscan borderline at 6.8 kPa.",
+        "modifiable": true
+      }
+    ],
+    "lifestyle": [
+      {
+        "factor": "Active smoking",
+        "risk_level": "Very High",
+        "details": "5-6 cigarettes/day currently. 15 pack-year history. Failed quit attempt.",
+        "modifiable": true
+      },
+      {
+        "factor": "Alcohol consumption",
+        "risk_level": "Moderate",
+        "details": "Reduced from heavy to occasional, but still contributing to liver stress and caloric excess.",
+        "modifiable": true
+      },
+      {
+        "factor": "Sedentary lifestyle",
+        "risk_level": "High",
+        "details": "Prolonged sitting 10-12 hours/day. No structured exercise. Deconditioning evident on stress test (7.2 METs).",
+        "modifiable": true
+      },
+      {
+        "factor": "Poor dietary habits",
+        "risk_level": "High",
+        "details": "High-fat, high-sodium, high-calorie diet. Fast food and processed meals. Minimal fruit/vegetable intake.",
+        "modifiable": true
+      },
+      {
+        "factor": "Chronic sleep deprivation",
+        "risk_level": "Moderate",
+        "details": "Average 5.5 hours/night. Poor sleep quality. Possible undiagnosed sleep apnea.",
+        "modifiable": true
+      },
+      {
+        "factor": "High chronic stress (unmanaged)",
+        "risk_level": "Moderate-High",
+        "details": "Corporate work stress with no coping mechanisms other than smoking and alcohol.",
+        "modifiable": true
+      }
+    ]
+  },
+  "symptoms_history": [
+    {
+      "symptom": "Acid reflux / heartburn",
+      "first_reported": "2016-06-15",
+      "frequency": "Frequent (3-4 times per week)",
+      "severity": "Moderate",
+      "status": "Managed with Pantoprazole (recurs when medication skipped)",
+      "related_condition": "Chronic Gastritis / GERD",
+      "notes": "Triggered by spicy food, alcohol, coffee, and lying down after meals."
+    },
+    {
+      "symptom": "Fatigue / low stamina",
+      "first_reported": "2018-01-10",
+      "frequency": "Chronic (daily)",
+      "severity": "Moderate",
+      "status": "Ongoing",
+      "related_condition": "Deconditioning, Smoking, Poor sleep",
+      "notes": "Progressive worsening over years. Cannot sustain physical activity. Easily exhausted."
+    },
+    {
+      "symptom": "Shortness of breath on exertion",
+      "first_reported": "2019-04-20",
+      "frequency": "Regular (with mild-moderate exertion)",
+      "severity": "Moderate",
+      "status": "Ongoing - worsening",
+      "related_condition": "Smoking-related airway disease, CAD, Deconditioning",
+      "notes": "Cannot climb >2 flights of stairs. Breathless while walking briskly. Multifactorial — cardiac and pulmonary."
+    },
+    {
+      "symptom": "Chest discomfort / tightness",
+      "first_reported": "2020-09-15",
+      "frequency": "Intermittent (1-2 times per week during stress)",
+      "severity": "Moderate-High",
+      "status": "Managed with Metoprolol and Nitroglycerin PRN",
+      "related_condition": "Coronary Artery Disease, Stable Angina",
+      "notes": "Was vague initially. Became more typical angina pattern. Led to NSTEMI in August 2024."
+    },
+    {
+      "symptom": "Morning smoker's cough",
+      "first_reported": "2011-01-01",
+      "frequency": "Daily",
+      "severity": "Mild-Moderate",
+      "status": "Ongoing",
+      "related_condition": "Chronic smoking, Early COPD",
+      "notes": "Productive cough in mornings. Worsens in winter."
+    },
+    {
+      "symptom": "Pedal edema (mild)",
+      "first_reported": "2023-08-15",
+      "frequency": "Intermittent",
+      "severity": "Mild",
+      "status": "Ongoing",
+      "related_condition": "Amlodipine side effect",
+      "notes": "Mild swelling in ankles, especially in evening. Known side effect of Amlodipine."
+    }
+  ],
+  "hospital_visits": [
+    {
+      "visit_id": "HV-P002-001",
+      "date": "2017-11-08",
+      "facility": "Breach Candy Hospital, Mumbai",
+      "type": "Outpatient - Diagnostic",
+      "reason": "Persistent acid reflux and epigastric pain",
+      "doctor": "Dr. Meera Kapoor (Gastroenterologist)",
+      "outcome": "Upper GI endoscopy performed. Chronic erosive gastritis diagnosed. H. pylori negative. Pantoprazole started.",
+      "duration": "Day procedure",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P002-002",
+      "date": "2019-06-20",
+      "facility": "Hinduja Hospital, Mumbai",
+      "type": "Outpatient - Specialist Consultation",
+      "reason": "Shortness of breath evaluation",
+      "doctor": "Dr. Rahul Desai (Pulmonologist)",
+      "outcome": "Spirometry showed mild reduction in lung volumes. Early smoking-related airway changes. Smoking cessation strongly advised.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P002-003",
+      "date": "2023-05-20",
+      "facility": "Kokilaben Hospital, Mumbai",
+      "type": "Outpatient - Diagnostic",
+      "reason": "Persistent elevated blood pressure readings",
+      "doctor": "Dr. Vikram Sharma (Cardiologist)",
+      "outcome": "24-hour ABPM confirmed Stage 1 Hypertension with non-dipper pattern. Amlodipine initiated.",
+      "duration": "24-hour monitoring",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P002-004",
+      "date": "2024-08-10",
+      "facility": "Lilavati Hospital, Mumbai (Emergency)",
+      "type": "Emergency - Cardiac",
+      "reason": "Acute chest pain, dizziness, diaphoresis",
+      "doctor": "Dr. Vikram Sharma (Cardiologist)",
+      "outcome": "NSTEMI diagnosed. CCU admission for 3 days. Troponin elevated. ECG ST-T changes. Echocardiogram showed mild LVH and LVEF 55%. Coronary angiography showed mid-LAD 40-50% stenosis. Medical management. Medication intensification.",
+      "duration": "3 days inpatient (CCU)",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P002-005",
+      "date": "2025-03-18",
+      "facility": "Hinduja Hospital, Mumbai",
+      "type": "Outpatient - Follow-up",
+      "reason": "Liver function monitoring (alcohol + statin)",
+      "doctor": "Dr. Vikram Sharma",
+      "outcome": "Mildly elevated liver enzymes. GGT elevated (alcohol marker). Fibroscan borderline. Advised alcohol reduction.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    },
+    {
+      "visit_id": "HV-P002-006",
+      "date": "2025-08-22",
+      "facility": "Kokilaben Hospital, Mumbai",
+      "type": "Outpatient - Cardiac Rehabilitation",
+      "reason": "Post-NSTEMI cardiac assessment",
+      "doctor": "Dr. Vikram Sharma (Cardiologist)",
+      "outcome": "Stress test positive for ischemia at high workload. Reduced functional capacity (7.2 METs). Referred to cardiac rehabilitation.",
+      "duration": "Day visit",
+      "follow_up_scheduled": true
+    }
+  ],
+  "preventive_care": [
+    {
+      "action": "Smoking cessation program",
+      "frequency": "Ongoing",
+      "last_done": "2024-08-15",
+      "next_due": "Immediate",
+      "status": "Non-Compliant (relapsed)",
+      "notes": "One quit attempt post cardiac event. Relapsed after 3 months. Nicotine replacement therapy recommended."
+    },
+    {
+      "action": "Cardiac rehabilitation program",
+      "frequency": "Ongoing",
+      "last_done": "2025-08-22",
+      "next_due": "Continuous enrollment",
+      "status": "Partially compliant",
+      "notes": "Referred but attendance has been irregular."
+    },
+    {
+      "action": "Lipid profile monitoring",
+      "frequency": "Every 3-6 months",
+      "last_done": "2026-04-15",
+      "next_due": "2026-10-15",
+      "status": "Up to date",
+      "notes": "LDL still above post-CAD target. May need medication adjustment."
+    },
+    {
+      "action": "Blood pressure home monitoring",
+      "frequency": "Daily (twice daily recommended)",
+      "last_done": "2026-04-15",
+      "next_due": "Ongoing",
+      "status": "Partially compliant",
+      "notes": "Patient does not monitor consistently."
+    },
+    {
+      "action": "Annual flu vaccination",
+      "frequency": "Annually",
+      "last_done": "2024-10-20",
+      "next_due": "2025-10-20",
+      "status": "Overdue",
+      "notes": "Recommended for cardiac patients. Not received in 2025."
+    },
+    {
+      "action": "Liver function monitoring",
+      "frequency": "Every 3-6 months",
+      "last_done": "2025-03-18",
+      "next_due": "2025-09-18",
+      "status": "Overdue",
+      "notes": "Important due to alcohol use + high-dose statin."
+    },
+    {
+      "action": "Glucose / HbA1c monitoring",
+      "frequency": "Every 6 months",
+      "last_done": "2026-04-15",
+      "next_due": "2026-10-15",
+      "status": "Up to date",
+      "notes": "Prediabetes monitoring. At high risk for Type 2 Diabetes."
+    },
+    {
+      "action": "Spirometry / Pulmonary function",
+      "frequency": "Annually",
+      "last_done": "2026-04-15",
+      "next_due": "2027-04-15",
+      "status": "Up to date",
+      "notes": "FEV1/FVC below normal. Needs pulmonologist evaluation for COPD."
+    },
+    {
+      "action": "Weight management program",
+      "frequency": "Ongoing",
+      "last_done": "Never enrolled",
+      "next_due": "Immediate",
+      "status": "Not started",
+      "notes": "BMI 31.5. Weight loss essential for all cardiovascular risk factors."
+    }
+  ],
+  "summary_insights": {
+    "overall_health_status": "Poor and deteriorating. Karan Malhotra presents a complex case of lifestyle-driven multi-organ disease in a relatively young male. His 18-year history of smoking, alcohol use, poor diet, and sedentary living has resulted in established coronary artery disease (NSTEMI at age 36), hypertension, severe dyslipidemia, obesity, chronic gastritis, prediabetes, early COPD changes, and borderline liver stress. Despite medication, his conditions remain suboptimally controlled due to poor lifestyle compliance. His medical trajectory represents a cautionary case of how modifiable risk factors can accelerate cardiovascular disease decades ahead of expected onset. His compliance with treatment has been consistently low to moderate, which significantly compounds his risk profile.",
+    "key_risks": [
+      "Major adverse cardiac event (MACE) — 10-year ASCVD risk estimated at 15-20% despite being only 38 years old",
+      "Progression to obstructive coronary artery disease requiring intervention (stenting or CABG)",
+      "Development of Type 2 Diabetes within 3-5 years if lifestyle not modified",
+      "COPD progression with continued smoking — spirometry already showing obstructive pattern",
+      "Heart failure progression — LVEF already at lower limit (55%) with LVH and diastolic dysfunction",
+      "Liver disease progression — combined alcoholic and non-alcoholic fatty liver disease with borderline fibrosis",
+      "Sudden cardiac death — family history (paternal uncle) and personal risk factors converge"
+    ],
+    "progression_pattern": "Accelerated multi-system deterioration driven by lifestyle factors. Age 20-25: Lifestyle habits established (smoking, alcohol, poor diet). Age 26-30: Weight gain, early metabolic derangements, gastritis. Age 31-34: Borderline hypertension, severe dyslipidemia, reduced exercise tolerance, shortness of breath. Age 35: Formal hypertension and statin initiation (delayed by patient refusal). Age 36: NSTEMI — the sentinel cardiac event revealing established atherosclerotic disease. Age 37-38: Continued suboptimal control despite medication, now showing early COPD and liver stress. The pattern shows a 'cascade of neglect' where each untreated risk factor accelerates the next, creating a compound cardiovascular risk that is far greater than the sum of individual factors.",
+    "predicted_future_risks": [
+      {
+        "risk": "Recurrent acute coronary syndrome or MI",
+        "probability": "High (30-40% within 5 years if smoking continues)",
+        "mitigation": "Smoking cessation alone would reduce risk by 50%. Achieving LDL <70 mg/dL would provide additional 25% relative risk reduction."
+      },
+      {
+        "risk": "Type 2 Diabetes development",
+        "probability": "Very High (60-70% within 5 years without intervention)",
+        "mitigation": "Weight loss of 7-10% body weight, dietary modification, and structured exercise could delay or prevent onset. Metformin prophylaxis may be warranted."
+      },
+      {
+        "risk": "Clinically significant COPD",
+        "probability": "High (50-60% within 5-10 years with continued smoking)",
+        "mitigation": "Smoking cessation is the ONLY intervention that can halt COPD progression."
+      },
+      {
+        "risk": "Heart failure (HFpEF progression)",
+        "probability": "Moderate (20-30% within 10 years)",
+        "mitigation": "BP control, weight loss, and treatment of underlying CAD. ACE inhibitor addition recommended."
+      },
+      {
+        "risk": "Non-alcoholic steatohepatitis (NASH) / liver fibrosis",
+        "probability": "Moderate (25-35% within 5 years)",
+        "mitigation": "Alcohol cessation, weight loss, and Vitamin E supplementation may help."
+      }
+    ]
+  }
+}

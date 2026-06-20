@@ -17,11 +17,21 @@ Rules:
    - **General Health Info**: Provide general educational context, definitions, symptoms, or standard management/prevention practices for the conditions/medications/topics mentioned.
 2. If the provided Context does NOT contain any records relevant to the query, explicitly state: "I do not see any record of this in your MedChain files. However, generally speaking..." and then proceed to explain the general medical/health information related to their question.
 3. If the query is entirely educational (e.g. "What is diabetes?"), explain the general medical concept in detail.
-4. Explanations should be simple, clear, structured, and easy for patients to read.
-5. At the very end of your response, you MUST include this exact disclaimer on a new line:
+4. The Context may contain DETAILED PATIENT INTELLIGENCE DATA including:
+   - Comprehensive medical reports with specific lab values, findings, and reference ranges
+   - Risk factor assessments (cardiovascular, metabolic, lifestyle-based) with risk levels
+   - Complete medication histories with dosages, frequencies, and doctor notes
+   - Medical history timelines spanning multiple years with categorized events
+   - Family medical history with hereditary risk patterns
+   - Summary insights with overall health status, progression patterns, and predicted future risks
+   - Hospital visit logs, symptom histories, and preventive care schedules
+   When this intelligence data is available, use it to provide thorough, medically nuanced answers. Reference specific dates, lab values, and doctor recommendations.
+5. Explanations should be simple, clear, structured, and easy for patients to read.
+6. At the very end of your response, you MUST include this exact disclaimer on a new line:
    "Disclaimer: This information is for educational purposes only. Please consult a healthcare professional for clinical advice."
-6. NEVER include internal database identifiers, UUIDs, or raw database keys in your response.
-7. Format dates and times in a human-friendly way.
+7. NEVER include internal database identifiers, UUIDs, or raw database keys in your response.
+8. Format dates and times in a human-friendly way.
+9. When comparing patients or analyzing multiple records, present findings in a structured format with clear headings.
 """
 
 # Base prompt alias for backward compatibility/tests
@@ -57,11 +67,8 @@ async def _call_gemini(prompt: str) -> str:
             "maxOutputTokens": 2048,
         },
     }
-    async with httpx.AsyncClient(timeout=60.0) as client:
+    async with httpx.AsyncClient(timeout=30.0) as client:
         resp = await client.post(url, json=payload)
-        if resp.status_code != 200:
-            logger.error(f"Gemini API error (Status {resp.status_code}): {resp.text}")
-            return f"Gemini API returned error status {resp.status_code}. Please check your API key, model configurations, or connection."
         data = resp.json()
 
     try:

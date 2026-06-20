@@ -22,5 +22,6 @@ local_settings.py
 media/
 
 # RAG Data Index
-medchain-rag/data/
+medchain-rag/data/faiss.index
+medchain-rag/data/faiss_meta.json
 
